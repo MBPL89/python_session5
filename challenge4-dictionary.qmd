@@ -1,0 +1,97 @@
+---
+title: "5. Dictionary Challenge - Solution"
+author: "Dr. Piccoli"
+format: live-html
+pyodide:
+  packages:
+    - seaborn
+editor_options: 
+  chunk_output_type: console
+---
+
+```{=html}
+<style>
+/* Target the first tab (Demo) */
+.nav-pills .nav-item:nth-child(1) .nav-link {
+  background-color: #FFC20A; /* Yellow */
+  color: white;
+}
+
+/* Target the second tab (Example) */
+.nav-pills .nav-item:nth-child(2) .nav-link {
+  background-color: #5D3A9B; /* Purple */
+  color: white;
+}
+
+/* Target the third tab (Exercise) */
+.nav-pills .nav-item:nth-child(3) .nav-link {
+  background-color: #0C7BDC; /* Blue */
+  color: white;
+}
+
+/* Target the fourth tab (Activity) */
+.nav-pills .nav-item:nth-child(4) .nav-link {
+  background-color: #E66100; /* Orange */
+  color: white;
+}
+
+/* Target the fifth tab (Activity2) */
+.nav-pills .nav-item:nth-child(5) .nav-link {
+  background-color: #40B0A6; /* teal */
+  color: white;
+}
+
+/* Active tab styling */
+.nav-pills .nav-link.active {
+  background-color: #2E7D32; /* Customize active tab color */
+  color: white;
+}
+</style>
+```
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}} {{< include ./_extensions/r-wasm/live/_gradethis.qmd >}}
+
+```{pyodide}
+#| autorun: true
+#| startover: false
+#| edit: false
+#| runbutton: false
+#| echo: false
+import sys
+from io import StringIO
+
+```
+
+This is a challenge that uses the skills you developed to this point, with particular attention to the use of dictionaries
+
+The task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and create a dictionary with food items and drink items as separate. Then you should compute the sum total of what the guest spent, keeping food and drink items separate. The output of your program will print two messages:
+
+`Total check value for food items is: $ [total value of all food items ordered]`
+
+and
+
+`Total check value for drink items is: $ [total value of all drink items ordered]`
+
+Since the data comes from a system, a Poing of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:
+
+`data = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'`
+
+You should then make sure your code generalizes to the following test cases:
+
+`data = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'`
+
+`data = 'chicken food$12.50'`
+
+`data = ''`
+
+Hint: your dictionary will be nested, with the following structure:
+
+`{'food': {'chicken': 12.5, 'burger': 10.5}, 'drink': {'beer': 5.0, 'wine': 6.5}}`
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+
+
+```

@@ -1,0 +1,39 @@
+project:
+  type: website
+website:
+  title: "Intro to Python: Session 5"
+  navbar:
+    background: dark
+    search: false
+    left:
+      - href: index.qmd
+        text: Session 5 Starter
+      - href: completed.qmd
+        text: Session 5 Completed  
+      - text: "Practice"
+        menu:
+        - p6-data-structures-challenges.qmd
+        - p6-data-structures-challenges-solved.qmd
+      - text: "Challenge"
+        menu:
+        - challenge3-lists.qmd
+        - challenge4-dictionary.qmd
+        - challenge3-lists_solved.qmd
+        - challenge4-dictionary_solved.qmd
+  drafts:
+    - p6-data-structures-challenges-solved.qmd
+    - challenge3-lists_solved.qmd
+    - challenge4-dictionary_solved.qmd
+  draft-mode: gone
+
+format:
+  html:
+    smooth-scroll: true
+    theme:
+      light: materia
+      dark: darkly
+    fontsize: 1.4em
+    linestretch: 1.5
+    toc: true
+
+editor: visual

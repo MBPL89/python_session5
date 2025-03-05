@@ -1,0 +1,302 @@
+---
+title: "4. Strings"
+author: "Dr. Piccoli"
+format: live-html
+pyodide:
+  packages:
+    - seaborn
+editor_options: 
+  chunk_output_type: console
+---
+
+```{=html}
+<style>
+/* Target the first tab (Demo) */
+.nav-pills .nav-item:nth-child(1) .nav-link {
+  background-color: #FFC20A; /* Yellow */
+  color: white;
+}
+
+/* Target the second tab (Example) */
+.nav-pills .nav-item:nth-child(2) .nav-link {
+  background-color: #5D3A9B; /* Purple */
+  color: white;
+}
+
+/* Target the third tab (Exercise) */
+.nav-pills .nav-item:nth-child(3) .nav-link {
+  background-color: #0C7BDC; /* Blue */
+  color: white;
+}
+
+/* Target the fourth tab (Activity) */
+.nav-pills .nav-item:nth-child(4) .nav-link {
+  background-color: #E66100; /* Orange */
+  color: white;
+}
+
+/* Target the fifth tab (Activity2) */
+.nav-pills .nav-item:nth-child(5) .nav-link {
+  background-color: #40B0A6; /* teal */
+  color: white;
+}
+
+/* Active tab styling */
+.nav-pills .nav-link.active {
+  background-color: #2E7D32; /* Customize active tab color */
+  color: white;
+}
+</style>
+```
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}} {{< include ./_extensions/r-wasm/live/_gradethis.qmd >}}
+
+```{pyodide}
+#| autorun: true
+#| startover: false
+#| edit: false
+#| runbutton: false
+#| echo: false
+import sys
+from io import StringIO
+
+```
+
+# 4. Strings
+
+A string is a sequence of characters. You can access the characters one at a time with the bracket operator:
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+fruit = 'banana'
+letter = fruit[1]
+```
+
+The expression in brackets is called an **index**.
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+print(letter)
+```
+
+Keep in mind that in Python, the index is an offset from the beginning of the string, and the offset of the first letter is zero.  
+
+::: {.callout-warning} 
+Remember that the value of the index has to be an integer!
+:::
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+letter = fruit[1.5]
+```
+
+## Length of strings
+
+To get a length of a string, you can use function len()
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+len(fruit)
+```
+
+To find the last element of a sequence, remember about starting from 0!!!
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+length = len(fruit)
+
+lastWrong = fruit[length] 
+```
+
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+lastCorrect = fruit[length-1] 
+
+print(lastCorrect)
+```
+
+## String slices
+
+A segment of a string is called a slice. Selecting a slice is similar to selecting a character:
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+print(fruit[3:6])
+```
+
+If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string:
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+fruit[:3]
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+fruit[3:]
+```
+
+If the first index is greater than or equal to the second the result is an empty string, represented by two quotation marks:
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+fruit[3:3]
+```
+
+## String comparison
+
+The word `in` is a boolean operator that takes two strings and returns True if the first appears as a substring in the second:
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+'a' in 'banana'
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+'seed' in 'banana'
+```
+
+You can use comparison operators to compare two string:
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+fruit == 'banana'
+```
+
+You can use `>` and `<` to find alphabetical order.
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+"apple" > "Banana"
+```
+
+## Parsing text
+
+You can use Python to find and extract a specific portion of text from a longer string. For example, find a domain address in an email:
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+data = 'From marcin.bartosiak@unipv.it Sat Apr  19 09:14:16 2020'
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+#find position of the @ sign
+atpos = data.find('@')
+print(atpos)
+```
+
+::: {.callout-warning} 
+Pay attention to syntax: variable.function()
+:::
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+#find position of the first space after the @
+sppos = data.find(' ',atpos)
+print(sppos)
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+#find the hosting address
+host = data[atpos+1:sppos]
+print(host)
+```
+
+## Format operator
+
+The format operator, `%` allows us to construct strings, replacing parts of the strings with the data stored in variables.  
+- `%d` - integer
+- `%g` - floating-point number
+- `%s` - string
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+city = "Pavia"
+
+print("University of %s" % city)
+```
+
+You can use multiple values too. 
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+year = 2025
+print("Today is March %drd, %d. We are in %s." % (5, year, city))
+```
+
+
+```{pyodide}
+#| autorun: false
+#| startover: false
+#| min-lines: 3
+#| completion: true
+#Extra practice chunk
+
+```
+
+
+::: disclaimer
+<p><strong>Images and GIFs Disclaimer:</strong> Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.</p>
+:::
+
+```{=html}
+<style>
+.disclaimer {
+  font-size: 0.8em;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+</style>
+```
+
+```{=html}
+<div>
+  {{< include footer.html >}}
+</div>
+```

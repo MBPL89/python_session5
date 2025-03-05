@@ -1,0 +1,38 @@
+{
+  "index.qmd": {
+    "index.html": "fe3224be"
+  },
+  "about.qmd": {
+    "about.html": "a01c1536"
+  },
+  "challenge1-functions.qmd": {
+    "challenge1-functions.html": "18fecea3"
+  },
+  "challenge1-functions_solved.qmd": {
+    "challenge1-functions_solved.html": "a17bcd66"
+  },
+  "completed.qmd": {
+    "completed.html": "0309355d"
+  },
+  "p4-functions-solved.qmd": {
+    "p4-functions-solved.html": "4b00874b"
+  },
+  "p4-functions.qmd": {
+    "p4-functions.html": "7ff28a3f"
+  },
+  "challenge2-strings.qmd": {
+    "challenge2-strings.html": "3091e1e0"
+  },
+  "challenge2-strings_solved.qmd": {
+    "challenge2-strings_solved.html": "4edf936d"
+  },
+  "p5-strings-solved.qmd": {
+    "p5-strings-solved.html": "eedbd7f5"
+  },
+  "p5-strings.qmd": {
+    "p5-strings.html": "ca5085c5"
+  },
+  "c6-data-structures.qmd": {
+    "c6-data-structures.html": "a0257887"
+  }
+}
