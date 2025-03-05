@@ -3,7 +3,7 @@
     "path": "C:/Users/admin/OneDrive/Working/Teaching/Coding/python_session5/challenge4-dictionary.qmd",
     "project_path": "challenge4-dictionary.qmd",
     "type": "quarto_markdown",
-    "hash": "2150894135",
+    "hash": "3627725100",
     "contents": "",
     "dirty": false,
     "created": 1741181920366.0,
@@ -18,15 +18,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "49:0",
-        "cursorPosition": "95,0",
-        "scrollLine": "78"
+        "cursorPosition": "1,31",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1741181939,
+    "lastKnownWriteTime": 1741184382,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1741181939593,
+    "last_content_update": 1741184382159,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,0 +1,15 @@
+{
+  "hash": "b55d4437f3a4eb54e053dc02dcc0a5b9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"5. Data Sructures Practice\"\nauthor: \"Dr. Piccoli\"\nformat: live-html\npyodide:\n  packages:\n    - seaborn\neditor_options: \n  chunk_output_type: console\n---\n\n```{=html}\n<style>\n/* Target the first tab (Demo) */\n.nav-pills .nav-item:nth-child(1) .nav-link {\n  background-color: #FFC20A; /* Yellow */\n  color: white;\n}\n\n/* Target the second tab (Example) */\n.nav-pills .nav-item:nth-child(2) .nav-link {\n  background-color: #5D3A9B; /* Purple */\n  color: white;\n}\n\n/* Target the third tab (Exercise) */\n.nav-pills .nav-item:nth-child(3) .nav-link {\n  background-color: #0C7BDC; /* Blue */\n  color: white;\n}\n\n/* Target the fourth tab (Activity) */\n.nav-pills .nav-item:nth-child(4) .nav-link {\n  background-color: #E66100; /* Orange */\n  color: white;\n}\n\n/* Target the fifth tab (Activity2) */\n.nav-pills .nav-item:nth-child(5) .nav-link {\n  background-color: #40B0A6; /* teal */\n  color: white;\n}\n\n/* Active tab styling */\n.nav-pills .nav-link.active {\n  background-color: #2E7D32; /* Customize active tab color */\n  color: white;\n}\n</style>\n```\n\n::: {.cell}\n\n:::\n\n::: {.cell autorun='true' startover='false' edit='false' runbutton='false'}\n```{pyodide}\n#| autorun: true\n#| startover: false\n#| edit: false\n#| runbutton: false\n#| echo: false\nimport sys\nfrom io import StringIO\n\n```\n:::\n\n\n\n\n1)  **To-Do List Manager** Create a function `add_task(todo_list, task)` that adds a task to a to-do list (list of strings). Then create another `functioremove_task(todo_list, task)` to remove a task if it exists. To test the functions, create a list of 5 things and loop through it, then create a list of two things and remove them. Make sure to use error checking to handle any possible error (e.g., An item to remove is not in the list of added items)\n\n\n\n\n::: {.cell startover='false' autorun='false' min-lines='3'}\n```{pyodide}\n#| startover: false\n#| autorun: false\n#| min-lines: 3\n\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

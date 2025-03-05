@@ -3,7 +3,7 @@
     "path": "C:/Users/admin/OneDrive/Working/Teaching/Coding/python_session5/challenge3-lists.qmd",
     "project_path": "challenge3-lists.qmd",
     "type": "quarto_markdown",
-    "hash": "175688157",
+    "hash": "856388718",
     "contents": "",
     "dirty": false,
     "created": 1741181877322.0,
@@ -18,15 +18,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "55:0",
-        "cursorPosition": "91,0",
-        "scrollLine": "75"
+        "cursorPosition": "1,25",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1741181899,
+    "lastKnownWriteTime": 1741184390,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1741181899151,
+    "last_content_update": 1741184390166,
     "read_only": false,
     "read_only_alternatives": []
 }

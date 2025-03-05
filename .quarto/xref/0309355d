@@ -1,1 +1,1 @@
-{"headings":["strings","length-of-strings","string-slices","string-comparison","parsing-text","format-operator"],"entries":[]}
+{"entries":[],"headings":["data-structures","lists","lists-are-mutable","list-operations","list-slices","list-methods","deleting-elements-from-a-list","dictionaries","dictionaries-as-a-set-of-counters","tuples","tuple-assignment","tuples-and-dictionaries","list-dictionary-or-tuple"]}

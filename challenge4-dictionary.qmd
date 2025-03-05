@@ -1,5 +1,5 @@
 ---
-title: "5. Dictionary Challenge - Solution"
+title: "5. Dictionary Challenge"
 author: "Dr. Piccoli"
 format: live-html
 pyodide:

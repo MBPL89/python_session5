@@ -1,5 +1,5 @@
 ---
-title: "5. Data Sructures Practice - Solution"
+title: "5. Data Sructures Practice"
 author: "Dr. Piccoli"
 format: live-html
 pyodide:

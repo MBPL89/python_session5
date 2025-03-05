@@ -34,5 +34,23 @@
   },
   "c6-data-structures.qmd": {
     "c6-data-structures.html": "a0257887"
+  },
+  "p6-data-structures-challenges.qmd": {
+    "p6-data-structures-challenges.html": "46db8a01"
+  },
+  "challenge3-lists.qmd": {
+    "challenge3-lists.html": "534ea3da"
+  },
+  "challenge3-lists_solved.qmd": {
+    "challenge3-lists_solved.html": "101dba85"
+  },
+  "challenge4-dictionary.qmd": {
+    "challenge4-dictionary.html": "e2e2ca63"
+  },
+  "challenge4-dictionary_solved.qmd": {
+    "challenge4-dictionary_solved.html": "161f73e7"
+  },
+  "p6-data-structures-challenges-solved.qmd": {
+    "p6-data-structures-challenges-solved.html": "cdf0ff14"
   }
 }
