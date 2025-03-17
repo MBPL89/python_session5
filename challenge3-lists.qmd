@@ -85,6 +85,7 @@ You should then make sure your code generalizes to the following test cases:
 `data = ''`
 
 ```{pyodide}
+#| persist: true
 #| startover: false
 #| autorun: false
 #| min-lines: 3

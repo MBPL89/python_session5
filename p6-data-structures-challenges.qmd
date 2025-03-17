@@ -65,6 +65,7 @@ from io import StringIO
 1)  **To-Do List Manager** Create a function `add_task(todo_list, task)` that adds a task to a to-do list (list of strings). Then create another `functioremove_task(todo_list, task)` to remove a task if it exists. To test the functions, create a list of 5 things and loop through it, then create a list of two things and remove them. Make sure to use error checking to handle any possible error (e.g., An item to remove is not in the list of added items)
 
 ```{pyodide}
+#| persist: true
 #| startover: false
 #| autorun: false
 #| min-lines: 3

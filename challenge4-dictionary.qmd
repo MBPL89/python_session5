@@ -89,6 +89,7 @@ Hint: your dictionary will be nested, with the following structure:
 `{'food': {'chicken': 12.5, 'burger': 10.5}, 'drink': {'beer': 5.0, 'wine': 6.5}}`
 
 ```{pyodide}
+#| persist: true
 #| startover: false
 #| autorun: false
 #| min-lines: 3
