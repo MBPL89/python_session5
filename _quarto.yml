@@ -20,11 +20,11 @@ website:
         - challenge4-dictionary.qmd
         - challenge3-lists_solved.qmd
         - challenge4-dictionary_solved.qmd
-  drafts:
-    - p6-data-structures-challenges-solved.qmd
-    - challenge3-lists_solved.qmd
-    - challenge4-dictionary_solved.qmd
-  draft-mode: gone
+  #drafts:
+  #  - p6-data-structures-challenges-solved.qmd
+  #  - challenge3-lists_solved.qmd
+  #  - challenge4-dictionary_solved.qmd
+  #draft-mode: gone
 
 format:
   html:
