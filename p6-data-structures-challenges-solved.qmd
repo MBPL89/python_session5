@@ -1,6 +1,6 @@
 ---
 title: "5. Data Sructures Practice - Solution"
-#draft: true
+draft: true
 author: "Dr. Piccoli"
 format: live-html
 pyodide:

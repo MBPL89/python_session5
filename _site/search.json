@@ -432,26 +432,5 @@
     "title": "5. List Challenge",
     "section": "",
     "text": "This is a challenge that uses the skills you developed to this point, with particular attention to list manipulation\nThe task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and compute the sum total of what the guest spent. Keep food and drink items separate by printing two messages:\nTotal check value for food items is: $ [total value of all food items ordered]\nand\nTotal check value for drink items is: $ [total value of all drink items ordered]\nSince the data comes from a system, a Poing of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'\nYou should then make sure your code generalizes to the following test cases:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'\ndata = 'chicken food$12.50'\ndata = ''"
-  },
-  {
-    "objectID": "p6-data-structures-challenges-solved.html",
-    "href": "p6-data-structures-challenges-solved.html",
-    "title": "5. Data Sructures Practice - Solution",
-    "section": "",
-    "text": "To-Do List Manager Create a function add_task(todo_list, task) that adds a task to a to-do list (list of strings). Then create another functioremove_task(todo_list, task) to remove a task if it exists. To test the functions, create a list of 5 things and loop through it, then create a list of two things and remove them. Make sure to use error checking to handle any possible error (e.g., An item to remove is not in the list of added items)"
-  },
-  {
-    "objectID": "challenge3-lists_solved.html",
-    "href": "challenge3-lists_solved.html",
-    "title": "5. List Challenge - Solution",
-    "section": "",
-    "text": "This is a challenge that uses the skills you developed to this point, with particular attention to list manipulation\nThe task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and compute the sum total of what the guest spent. Keep food and drink items separate by printing two messages:\nTotal check value for food items is: $ [total value of all food items ordered]\nand\nTotal check value for drink items is: $ [total value of all drink items ordered]\nSince the data comes from a system, a Poing of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'\nYou should then make sure your code generalizes to the following test cases:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'\ndata = 'chicken food$12.50'\ndata = ''"
-  },
-  {
-    "objectID": "challenge4-dictionary_solved.html",
-    "href": "challenge4-dictionary_solved.html",
-    "title": "5. Dictionary Challenge - Solution",
-    "section": "",
-    "text": "This is a challenge that uses the skills you developed to this point, with particular attention to the use of dictionaries\nThe task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and create a dictionary with food items and drink items as separate. Then you should compute the sum total of what the guest spent, keeping food and drink items separate. The output of your program will print two messages:\nTotal check value for food items is: $ [total value of all food items ordered]\nand\nTotal check value for drink items is: $ [total value of all drink items ordered]\nSince the data comes from a system, a Poing of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'\nYou should then make sure your code generalizes to the following test cases:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'\ndata = 'chicken food$12.50'\ndata = ''\nHint: your dictionary will be nested, with the following structure:\n{'food': {'chicken': 12.5, 'burger': 10.5}, 'drink': {'beer': 5.0, 'wine': 6.5}}"
   }
 ]
