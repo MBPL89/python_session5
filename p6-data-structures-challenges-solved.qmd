@@ -63,7 +63,127 @@ from io import StringIO
 
 ```
 
-1)  **To-Do List Manager** Create a function `add_task(todo_list, task)` that adds a task to a to-do list (list of strings). Then create another `functioremove_task(todo_list, task)` to remove a task if it exists. To test the functions, create a list of 5 things and loop through it, then create a list of two things and remove them. Make sure to use error checking to handle any possible error (e.g., An item to remove is not in the list of added items)
+1) **Word Length Filter**: Ask the user to input a sentence. Print all the words that are longer than 4 characters.
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+mock_input = StringIO("here is a sentence with words of varying length\n")
+sys.stdin = mock_input
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+words = sentence.split()
+for word in words:
+    if len(word) > 4:
+        print(word)
+```
+
+2) **Counting Specific Word**: Given a list of strings, count how many times the word "apple" appears (case-insensitive).
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+fruits = ["Apple", "banana", "APPLE", "orange", "apple"]
+count = 0
+
+for fruit in fruits:
+    if fruit.lower() == "apple":
+        count += 1
+
+print("Apple appears", count, "times.")
+
+```
+
+3) **Build a List from User Input**: Ask the user to enter 5 names and store them in a list. Then print the list.
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+mock_input = StringIO("…\n…\n…\n…\n…\n")
+sys.stdin = mock_input
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+names = []
+
+for i in range(5):
+    name = input("Enter a name: ")
+    names.append(name)
+
+print("Names entered:", names) 
+```
+
+4) **Build the infinite List from User Input**: Ask the user to continue to enter names as long as the user does not type “done”. Then print the list.
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+mock_input = StringIO("…\n…\n…\ndone\n")
+sys.stdin = mock_input
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+names = []
+
+while True:
+  name = input()
+  if name == "done":
+    break
+  else:
+    names.append(name)
+
+print("Names entered:", names) 
+```
+
+5) **Print Dictionary Keys**: You have a dictionary of animals and their sounds. Print all the animals (keys).
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+sounds = {"dog": "bark", "cat": "meow", "cow": "moo"}
+
+for animal in sounds.keys():
+    print(animal)
+```
+
+6) **Simple Login Check**: Check if a username exists in a dictionary. If it does, print "Welcome!", otherwise print "User not found."
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+mock_input = StringIO("…\n")
+sys.stdin = mock_input
+users = {"alice": "1234", "bob": "abcd"}
+```
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+if users.get(username):
+    print("Welcome!")
+else:
+    print("User not found.")
+```
+
+
+7)  **To-Do List Manager** Create a function `add_task(todo_list, task)` that adds a task to a to-do list (list of strings). Then create another `functioremove_task(todo_list, task)` to remove a task if it exists. To test the functions, create a list of 5 things and loop through it to create the list. Then create a list of 2 things and remove them. Make sure to handle any situation where an item to remove is not in the list of added items. To verify your code, print the list after adding the 5 items, then print it again after removing the items.
 
 ```{pyodide}
 #| startover: false
@@ -92,7 +212,7 @@ for task in tasks_to_add:
 print("To-do list after adding tasks:", todo_list)
 
 # Create a list of 2 tasks to remove
-tasks_to_remove = ["Finish homework", "Go jogging"]  # "Go jogging" is not in the list
+tasks_to_remove = ["Finish homework", "Go jogging"]  
 
 # Attempt to remove each task
 for task in tasks_to_remove:

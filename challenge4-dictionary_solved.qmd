@@ -63,7 +63,7 @@ from io import StringIO
 
 ```
 
-This is a challenge that uses the skills you developed to this point, with particular attention to the use of dictionaries
+1) **Guest Check** This is a challenge that uses the skills you develped to this point, with particular attention to the use of dictionaries. 
 
 The task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and create a dictionary with food items and drink items as separate. Then you should compute the sum total of what the guest spent, keeping food and drink items separate. The output of your program will print two messages:
 
@@ -73,27 +73,25 @@ and
 
 `Total check value for drink items is: $ [total value of all drink items ordered]`
 
-Since the data comes from a system, a Poing of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:
+Since the data comes from a system, a Point of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:
 
 `data = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'`
 
 You should then make sure your code generalizes to the following test cases:
 
 `data = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'`
-
 `data = 'chicken food$12.50'`
-
 `data = ''`
 
 Hint: your dictionary will be nested, with the following structure:
 
 `{'food': {'chicken': 12.5, 'burger': 10.5}, 'drink': {'beer': 5.0, 'wine': 6.5}}`
 
+
 ```{pyodide}
 #| startover: false
 #| autorun: false
 #| min-lines: 3
-# Challenge 3 - Dictionary
 data = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'
 #data = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'
 #data = 'chicken food$12.50'
@@ -128,4 +126,85 @@ else:
   for key in items_dict.keys():
     total = sum(items_dict[key].values())
     print("Total check value for " + key + " items is: $", total)
+```
+
+2) **Multi-User Task Manager** Multi User Task Manager: You are creating a task manager where each user has their own list of tasks. Use a dictionary to store users and their tasks, where: The keys are usernames (strings). The values are lists of tasks (strings). 
+
+Implement the following functions:
+1. `add_user(todo_dict, username)`: Adds a new user with an empty task list. If the user already exists, print a message.
+
+2. `add_task(todo_dict, username, task)`: Adds a task to the specified user’s task list. If the user doesn’t exist, print an error.
+
+3. `remove_task(todo_dict, username, task)`: Removes a task from the user’s list if it exists. If the user or task doesn’t exist, print an appropriate message.
+
+4. Test the functions by: 
+* Creating 2 users. 
+* Adding 3 tasks to each. 
+* Printing the full to-do structure. 
+* Removing a task for one user. 
+* Attempting to remove a non-existent task for the other. 
+* Printing the final structure.
+
+This task requires a dictionary because you are mapping users to their respective task lists, which cannot be done efficiently using only a list.
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
+# Add a new user with an empty task list
+def add_user(todo_dict, username):
+    if username not in todo_dict:
+        todo_dict[username] = []
+        print(f"User '{username}' added.")
+    else:
+        print(f"User '{username}' already exists.")
+
+# Add a task to a user's task list
+def add_task(todo_dict, username, task):
+    if username in todo_dict:
+        todo_dict[username].append(task)
+        print(f"Task '{task}' added to user '{username}'.")
+    else:
+        print(f"Error: User '{username}' does not exist.")
+
+# Remove a task from a user's task list
+def remove_task(todo_dict, username, task):
+    if username in todo_dict:
+        if task in todo_dict[username]:
+            todo_dict[username].remove(task)
+            print(f"Task '{task}' removed from user '{username}'.")
+        else:
+            print(f"Error: Task '{task}' not found for user '{username}'.")
+    else:
+        print(f"Error: User '{username}' does not exist.")
+
+# Initialize the to-do dictionary
+todo_dict = {}
+
+# Add users
+add_user(todo_dict, "alice")
+add_user(todo_dict, "bob")
+
+# Add tasks for each user
+add_task(todo_dict, "alice", "Buy groceries")
+add_task(todo_dict, "alice", "Finish report")
+add_task(todo_dict, "alice", "Call the bank")
+
+add_task(todo_dict, "bob", "Clean room")
+add_task(todo_dict, "bob", "Study for exam")
+add_task(todo_dict, "bob", "Reply to emails")
+
+# Display the to-do list structure after adding
+print("\nTo-do list after adding tasks:")
+for user, tasks in todo_dict.items():
+    print(f"{user}: {tasks}")
+
+# Remove tasks
+remove_task(todo_dict, "alice", "Finish report")
+remove_task(todo_dict, "bob", "Go jogging")  # this one doesn't exist
+
+# Final to-do list
+print("\nFinal to-do list:")
+for user, tasks in todo_dict.items():
+    print(f"{user}: {tasks}")
 ```

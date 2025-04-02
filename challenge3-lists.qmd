@@ -1,6 +1,6 @@
 ---
 title: "5. List Challenge"
-draft: true
+#draft: true
 author: "Dr. Piccoli"
 format: live-html
 pyodide:

@@ -1,6 +1,6 @@
 ---
 title: "5. Dictionary Challenge"
-draft: true
+#draft: true
 author: "Dr. Piccoli"
 format: live-html
 pyodide:
@@ -95,5 +95,32 @@ Hint: your dictionary will be nested, with the following structure:
 #| autorun: false
 #| min-lines: 3
 
+
+```
+
+
+2) **Multi-User Task Manager** Multi User Task Manager: You are creating a task manager where each user has their own list of tasks. Use a dictionary to store users and their tasks, where: The keys are usernames (strings). The values are lists of tasks (strings). 
+
+Implement the following functions:
+1. `add_user(todo_dict, username)`: Adds a new user with an empty task list. If the user already exists, print a message.
+
+2. `add_task(todo_dict, username, task)`: Adds a task to the specified user’s task list. If the user doesn’t exist, print an error.
+
+3. `remove_task(todo_dict, username, task)`: Removes a task from the user’s list if it exists. If the user or task doesn’t exist, print an appropriate message.
+
+4. Test the functions by: 
+* Creating 2 users. 
+* Adding 3 tasks to each. 
+* Printing the full to-do structure. 
+* Removing a task for one user. 
+* Attempting to remove a non-existent task for the other. 
+* Printing the final structure.
+
+This task requires a dictionary because you are mapping users to their respective task lists, which cannot be done efficiently using only a list.
+
+```{pyodide}
+#| startover: false
+#| autorun: false
+#| min-lines: 3
 
 ```
