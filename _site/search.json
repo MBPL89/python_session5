@@ -1,346 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "1. Introduction to Python programming",
+    "objectID": "p6-data-structures-challenges.html",
+    "href": "p6-data-structures-challenges.html",
+    "title": "5. Data Sructures Practice",
     "section": "",
-    "text": "In this part of the course we will leverage the following resources:\n\nIntro to Python book\n\n\n\n\n\n\n\n\n\n\nPython is amazingly complex and powerful. It is also very picky about the syntax you use to communicate with it. However, Python is not intelligent. You are really just having a conversation with yourself, but using proper syntax. Python is a way for the creators of programs to express how the conversation is supposed to proceed.\nProgramming languages like Python need to be translated. There are two types of “translator”: (1) interpreters and (2) compilers.\nAn interpreter reads the source code of the program as written by the programmer, parses the source code, and interprets the instructions on the fly. Python is an interpreter and when we are running Python interactively (like in this notebook), we can type a line of Python (a sentence) and Python processes it immediately and is ready for us to type another line of Python.\nA compiler needs to be handed the entire program in a file, and then it runs a process to translate the high-level source code into machine language and then the compiler puts the resulting machine language into a file for later execution.\nUnlike human languages, the Python vocabulary is actually pretty small. We call this “vocabulary” the “reserved words”. These are words that have very special meaning to Python. When Python sees these words in a Python program, they have one and only one meaning to Python.\nThe reserved words in the language where humans talk to Python include the following:\nand       del       global      not       with\nas        elif      if          or        yield\nassert    else      import      pass\nbreak     except    in          raise\nclass     finally   is          return\ncontinue  for       lambda      try\ndef       from      nonlocal    while\nYou will learn some fo these words later in the course. For now, remember to not use them as variable or function names.\nDuring this course you will learn how to write and execute your function but also how to use Python’s built-in functions. Python has many built-in functions that are always ready to use. The first one you should learn is help(). You can use it any time you need to refresh your memory on how a particular function works. Type it in the line below and run (ask the instructor how to run a piece of code if you are not sure).\n\n\n\n\n\n\n\n\nAs you can see, you opened an interactive help. You can type name of any function, module, etc. Until you type “quit”, the help prompt will remain active, allowing you to ask more question. Yet, it will block all the other lines from running. Now ask help about print() function (type “print” in the help prompt). Then close the help prompt (type “quit” in the help prompt).\nNow, once you know how the print function works, tell Python to print Hello world! (as every true programmer should do ;-)\n\n\n\n\n\n\n\n\nSome of the lines in Python tell Python that you want it to remember some value for later. They do not give any visible output. Pick a name for that value to be remembered. We use the term variable to refer to the labels we use to refer to this stored data.\n\n\n\n\n\n\n\n\nYou can use that variable to retrieve the value later. Instead of typing print(10) you can type print([vairbale name]) (where [variable name] is the name you chose earlier)\nTry the print the value assigned to x\n\n\n\n\n\n\n\n\nAny value can be assigned to a variable. Variables can be also used in longer expressions or assigned to other variables (see the example below). Later you will see when it becomes useful.\n\n\n\n\n\n\n\n\nNow let’s print y\n\n\n\n\n\n\n\n\nLater, we will talk more about the variables.\n\n\nTyping commands into the Python interpreter is a great way to experiment with Python’s features, but it is not recommended for solving more complex problems.\nNormally, when we want to write a program, we use a text editor to write the Python instructions into a file, which is called a script. By convention, Python scripts have names that end with .py.\nTo execute the script, you have to tell the Python interpreter the name of the file. Let’s say we have a file called python.py. In a command window (or terminal), you would run a file as follows:\n$ python python.py\nWe use a special type of Python called iPython. In iPython we can use special notebooks (like the one you are reading now), which let us mix formatted text and Python code and execute Python code directly in the notebook.\nIf you want to install Python locally on your computer, check out one of these links: Windows Mac\n\n\n\nThe definition of a program at its most basic is a sequence of Python statements that have been crafted to do something.\nFor example, look at the following text. Look at the text and figure out the most common word and how many times it occurs.\nit may help to understand human affairs to be clear that most of the great triumphs and tragedies of history are caused, not by people being fundamentally good or fundamentally bad, but by people being fundamentally people ... he rather liked people\nThen imagine that you are doing this task looking at millions of lines of text. It would be quicker for you to learn Python and write a Python program to count the words than it would be to manually scan the words.\nNow take a look at the code below and run it. It does exactly what you were supposed to do (but faster and, probably, more accurately).\n\n\n\n\n\n\n\n\nYou don’t even need to know Python to use this program. You are the end user, you simply use the program. This is a good example of how Python and the Python language are acting as an intermediary between the end user and the programmer.\n\n\n\nThere are some low-level conceptual patterns that we use to construct programs. These constructs are not just for Python programs, they are part of every programming language from machine language up to the high-level languages.\n\ninput\nGet data from the “outside world”. This might be reading data from a file, or even some kind of sensor like a microphone or GPS. In our initial programs, our input will come from the user typing data on the keyboard.\noutput\nDisplay the results of the program on a screen or store them in a file or perhaps write them to a device like a speaker to play music or speak text.\nsequential execution\nPerform statements one after another in the order they are encountered in the script.\nconditional execution\nCheck for certain conditions and then execute or skip a sequence of statements.\nrepeated execution\nPerform some set of statements repeatedly, usually with some variation.\nreuse\nWrite a set of instructions once and give them a name and then reuse those instructions as needed throughout your program."
-  },
-  {
-    "objectID": "index.html#programs",
-    "href": "index.html#programs",
-    "title": "1. Introduction to Python programming",
-    "section": "Programs",
-    "text": "Programs\nTyping commands into the Python interpreter is a great way to experiment with Python’s features, but it is not recommended for solving more complex problems.\nNormally, when we want to write a program, we use a text editor to write the Python instructions into a file, which is called a script. By convention, Python scripts have names that end with .py.\nTo execute the script, you have to tell the Python interpreter the name of the file. Let’s say we have a file called python.py. In a command window (or terminal), you would run a file as follows:\n$ python python.py\nWe use a special type of Python called iPython. In iPython we can use special notebooks (like the one you are reading now), which let us mix formatted text and Python code and execute Python code directly in the notebook.\nIf you want to install Python locally on your computer, check out one of these links: Windows Mac"
-  },
-  {
-    "objectID": "index.html#what-is-a-program",
-    "href": "index.html#what-is-a-program",
-    "title": "1. Introduction to Python programming",
-    "section": "What is a program?",
-    "text": "What is a program?\nThe definition of a program at its most basic is a sequence of Python statements that have been crafted to do something.\nFor example, look at the following text. Look at the text and figure out the most common word and how many times it occurs.\nit may help to understand human affairs to be clear that most of the great triumphs and tragedies of history are caused, not by people being fundamentally good or fundamentally bad, but by people being fundamentally people ... he rather liked people\nThen imagine that you are doing this task looking at millions of lines of text. It would be quicker for you to learn Python and write a Python program to count the words than it would be to manually scan the words.\nNow take a look at the code below and run it. It does exactly what you were supposed to do (but faster and, probably, more accurately).\n\n\n\n\n\n\n\n\nYou don’t even need to know Python to use this program. You are the end user, you simply use the program. This is a good example of how Python and the Python language are acting as an intermediary between the end user and the programmer."
-  },
-  {
-    "objectID": "index.html#the-building-blocks-of-a-program",
-    "href": "index.html#the-building-blocks-of-a-program",
-    "title": "1. Introduction to Python programming",
-    "section": "The building blocks of a program",
-    "text": "The building blocks of a program\nThere are some low-level conceptual patterns that we use to construct programs. These constructs are not just for Python programs, they are part of every programming language from machine language up to the high-level languages.\n\ninput\nGet data from the “outside world”. This might be reading data from a file, or even some kind of sensor like a microphone or GPS. In our initial programs, our input will come from the user typing data on the keyboard.\noutput\nDisplay the results of the program on a screen or store them in a file or perhaps write them to a device like a speaker to play music or speak text.\nsequential execution\nPerform statements one after another in the order they are encountered in the script.\nconditional execution\nCheck for certain conditions and then execute or skip a sequence of statements.\nrepeated execution\nPerform some set of statements repeatedly, usually with some variation.\nreuse\nWrite a set of instructions once and give them a name and then reuse those instructions as needed throughout your program."
-  },
-  {
-    "objectID": "index.html#values-and-value-types",
-    "href": "index.html#values-and-value-types",
-    "title": "1. Introduction to Python programming",
-    "section": "Values and value types",
-    "text": "Values and value types\nA value is one of the basic things a program works with, like a letter or a number. These values belong to different types: 2 is an integer, and “Hello, World!” is a string, so called because it contains a “string” of letters.\nThese are all types in Python:\n\nint - numeric value (e.g 1)\nfloat - a decimal (e.g 2.5)\ncomplex - complex numbers coposed of real part and imaginary part (e.g. 6+4j where j represents the imaginary part)\nbool - Boolean value - True or False\nstr - text value (a string of letters) (e.g. 'Hello world!') - always enclosed in quotation marks!\nlist - a list of values - [1,2,3,4]\ntuple - a tuple - (1,2,3,4)\ndict - a dictionary - {1:\"one\", 2:\"two\", 3:\"three\"}\n\nTo find a type of a value, you use function type()\ntype([value])\nWhat is the data type of \"Hello world!\"?\n\n\n\n\n\n\n\n\nWhat is the data type of 17?\n\n\n\n\n\n\n\n\nWhat is the data type of 3.2?\n\n\n\n\n\n\n\n\nWhat is the type of 3.2 and \"3.2\"? Why are they different?\n\n\n\n\n\n\n\n\nWhat will happen if you try to print 1,000,000 in Python? What is the type of 1,000,000?"
-  },
-  {
-    "objectID": "index.html#variables",
-    "href": "index.html#variables",
-    "title": "1. Introduction to Python programming",
-    "section": "Variables",
-    "text": "Variables\nOne of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value. You assign a value to a variable using = sign:\n[variable] = [value]\nAssign 3.1415926535897931 to variable pi\n\n\n\n\n\n\n\n\nYou can assign value of any type to a variable.\nAssign 'Python ROCKS!!!' to a variable called message.\n\n\n\n\n\n\n\n\nNotice that assignement to a variable does not produce any output. You can print the value assigned to a variable by passing variable name to the print() function.\nAttention!! You pass the variable name without the quotation marks. That’s how we can tell variables from strings.\nPrint message\n\n\n\n\n\n\n\n\nPrint pi\n\n\n\n\n\n\n\n\nNow, you can check the type of the values by simply checking the type of a variable. Check the type of pi and message.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHave you noticed that the type of a variable is in fact the type of the assigned value?"
-  },
-  {
-    "objectID": "index.html#statements",
-    "href": "index.html#statements",
-    "title": "1. Introduction to Python programming",
-    "section": "Statements",
-    "text": "Statements\nYou have just learned the second type of statments.\nA statement is a unit of code that the Python interpreter can execute. We have seen two kinds of statements: print being an expression statement and assignment.\nWhen you type a statement in interactive mode, the interpreter executes it and displays the result, if there is one. A script usually contains a sequence of statements. If there is more than one statement, the results appear one at a time as the statements execute.\nRun the following code and compare it with its output:"
-  },
-  {
-    "objectID": "index.html#string-operations",
-    "href": "index.html#string-operations",
-    "title": "1. Introduction to Python programming",
-    "section": "String operations",
-    "text": "String operations\nThe + operator works with strings, but it is not addition in the mathematical sense. Instead it performs concatenation, which means joining the strings by linking them end to end.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe * operator also works with strings by multiplying the content of a string by an integer."
-  },
-  {
-    "objectID": "index.html#user-input",
-    "href": "index.html#user-input",
-    "title": "1. Introduction to Python programming",
-    "section": "User input",
-    "text": "User input\nPython provides a built-in function called input that gets input from the keyboard. When this function is called, the program stops and waits for the user to type something. When the user presses Return or Enter, the program resumes and input returns what the user typed as a string.\nTry it yourself:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo print the value entered by the user, you simply print the variable it was assigned to.\n\n\n\n\n\n\n\n\nYou can pass a string to input to be displayed to the user before pausing for input:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe sequence \\n at the end of the prompt represents a newline, which is a special character that causes a line break. That’s why the user’s input appears below the prompt.\nNow you can print your name:\n\n\n\n\n\n\n\n\nNow you can try it yourself.\n\nAsk your user to type the number of books s/he read last month.\nAssign the value to number variable\nTransform number variable to an integer using int() (use help() if you need it)\nCalculate the difference between the user and an average person (an average person reads 1 book a month)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAttention!!!\nIf you expect the user to type a numeric value and the user types something other than a string of digits, you get an error (try to type the answer as a string, e.g. six instead of 6). Why does it happen?\nLater, we will learn how to deal with such cases."
-  },
-  {
-    "objectID": "index.html#comments",
-    "href": "index.html#comments",
-    "title": "1. Introduction to Python programming",
-    "section": "Comments",
-    "text": "Comments\nAs programs get bigger and more complicated, they get more difficult to read. For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing. These notes are called comments, and in Python they start with the # symbol:\n\n\n\n\n\n\n\n\nEverything from the # to the end of the line is ignored; it has no effect on the program.\n\n\nImages and GIFs Disclaimer: Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
-  },
-  {
-    "objectID": "p2-variables-expressions-statements.html",
-    "href": "p2-variables-expressions-statements.html",
-    "title": "1. Practice: Variables and Statements",
-    "section": "",
-    "text": "Run the following code. What is wrong with it?\n\n\n\n\n\n\n\nImportant\n\n\n\nRewrite it and fix the errors.\n\n\n\n\n\n\n\n\n\n\n\nWhat will be the output of the following code?\n\n\n\n\n\n\n\nWarning\n\n\n\nTry to answer before running it."
-  },
-  {
-    "objectID": "p2-variables-expressions-statements.html#introduction",
-    "href": "p2-variables-expressions-statements.html#introduction",
-    "title": "1. Practice: Variables and Statements",
-    "section": "Introduction",
-    "text": "Introduction\n\nRun the following code. What is wrong with it?\n\n\n\n\n\n\n\nImportant\n\n\n\nRewrite it and fix the errors.\n\n\n\n\n\n\n\n\n\n\n\nWhat will be the output of the following code?\n\n\n\n\n\n\n\nWarning\n\n\n\nTry to answer before running it."
-  },
-  {
-    "objectID": "p2-variables-expressions-statements.html#variables",
-    "href": "p2-variables-expressions-statements.html#variables",
-    "title": "1. Practice: Variables and Statements",
-    "section": "Variables",
-    "text": "Variables\n\nWrite a program to prompt the user for hours and rate per hour to compute gross pay.\n\nMake sure your output looks exactly like this\nEnter Hours: 35 Enter Rate: 2.75 Pay: 96.25\n\n\n\n\n\n\nCaution\n\n\n\nPay attention to the type of your variables"
-  },
-  {
-    "objectID": "completed.html",
-    "href": "completed.html",
-    "title": "1. Introduction to Python programming",
-    "section": "",
-    "text": "In this part of the course we will leverage the following resources:\n\nIntro to Python book\n\n\n\n\nWarning: package 'countdown' was built under R version 4.3.3\n\n\n\n−+\n05:00\n\n\n\n\n\nPython is amazingly complex and powerful. It is also very picky about the syntax you use to communicate with it. However, Python is not intelligent. You are really just having a conversation with yourself, but using proper syntax. Python is a way for the creators of programs to express how the conversation is supposed to proceed.\nProgramming languages like Python need to be translated. There are two types of “translator”: (1) interpreters and (2) compilers.\nAn interpreter reads the source code of the program as written by the programmer, parses the source code, and interprets the instructions on the fly. Python is an interpreter and when we are running Python interactively (like in this notebook), we can type a line of Python (a sentence) and Python processes it immediately and is ready for us to type another line of Python.\nA compiler needs to be handed the entire program in a file, and then it runs a process to translate the high-level source code into machine language and then the compiler puts the resulting machine language into a file for later execution.\nUnlike human languages, the Python vocabulary is actually pretty small. We call this “vocabulary” the “reserved words”. These are words that have very special meaning to Python. When Python sees these words in a Python program, they have one and only one meaning to Python.\nThe reserved words in the language where humans talk to Python include the following:\nand       del       global      not       with\nas        elif      if          or        yield\nassert    else      import      pass\nbreak     except    in          raise\nclass     finally   is          return\ncontinue  for       lambda      try\ndef       from      nonlocal    while\nYou will learn some fo these words later in the course. For now, remember to not use them as variable or function names.\nDuring this course you will learn how to write and execute your function but also how to use Python’s built-in functions. Python has many built-in functions that are always ready to use. The first one you should learn is help(). You can use it any time you need to refresh your memory on how a particular function works. Type it in the line below and run (ask the instructor how to run a piece of code if you are not sure).\n\n\n\n\n\n\n\n\nAs you can see, you opened an interactive help. You can type name of any function, module, etc. Until you type “quit”, the help prompt will remain active, allowing you to ask more question. Yet, it will block all the other lines from running. Now ask help about print() function (type “print” in the help prompt). Then close the help prompt (type “quit” in the help prompt).\nNow, once you know how the print function works, tell Python to print Hello world! (as every true programmer should do ;-)\n\n\n\n\n\n\n\n\nSome of the lines in Python tell Python that you want it to remember some value for later. They do not give any visible output. Pick a name for that value to be remembered. We use the term variable to refer to the labels we use to refer to this stored data.\n\n\n\n\n\n\n\n\nYou can use that variable to retrieve the value later. Instead of typing print(10) you can type print([vairbale name]) (where [variable name] is the name you chose earlier)\nTry the print the value assigned to x\n\n\n\n\n\n\n\n\nAny value can be assigned to a variable. Variables can be also used in longer expressions or assigned to other variables (see the example below). Later you will see when it becomes useful.\n\n\n\n\n\n\n\n\nNow let’s print y\n\n\n\n\n\n\n\n\nLater, we will talk more about the variables.\n\n\nTyping commands into the Python interpreter is a great way to experiment with Python’s features, but it is not recommended for solving more complex problems.\nNormally, when we want to write a program, we use a text editor to write the Python instructions into a file, which is called a script. By convention, Python scripts have names that end with .py.\nTo execute the script, you have to tell the Python interpreter the name of the file. Let’s say we have a file called python.py. In a command window (or terminal), you would run a file as follows:\n$ python python.py\nWe use a special type of Python called iPython. In iPython we can use special notebooks (like the one you are reading now), which let us mix formatted text and Python code and execute Python code directly in the notebook.\nIf you want to install Python locally on your computer, check out one of these links: Windows Mac\n\n\n\nThe definition of a program at its most basic is a sequence of Python statements that have been crafted to do something.\nFor example, look at the following text. Look at the text and figure out the most common word and how many times it occurs.\nit may help to understand human affairs to be clear that most of the great triumphs and tragedies of history are caused, not by people being fundamentally good or fundamentally bad, but by people being fundamentally people ... he rather liked people\nThen imagine that you are doing this task looking at millions of lines of text. It would be quicker for you to learn Python and write a Python program to count the words than it would be to manually scan the words.\nNow take a look at the code below and run it. It does exactly what you were supposed to do (but faster and, probably, more accurately).\n\n\n\n\n\n\n\n\nYou don’t even need to know Python to use this program. You are the end user, you simply use the program. This is a good example of how Python and the Python language are acting as an intermediary between the end user and the programmer.\n\n\n\nThere are some low-level conceptual patterns that we use to construct programs. These constructs are not just for Python programs, they are part of every programming language from machine language up to the high-level languages.\n\ninput\nGet data from the “outside world”. This might be reading data from a file, or even some kind of sensor like a microphone or GPS. In our initial programs, our input will come from the user typing data on the keyboard.\noutput\nDisplay the results of the program on a screen or store them in a file or perhaps write them to a device like a speaker to play music or speak text.\nsequential execution\nPerform statements one after another in the order they are encountered in the script.\nconditional execution\nCheck for certain conditions and then execute or skip a sequence of statements.\nrepeated execution\nPerform some set of statements repeatedly, usually with some variation.\nreuse\nWrite a set of instructions once and give them a name and then reuse those instructions as needed throughout your program."
-  },
-  {
-    "objectID": "completed.html#programs",
-    "href": "completed.html#programs",
-    "title": "1. Introduction to Python programming",
-    "section": "Programs",
-    "text": "Programs\nTyping commands into the Python interpreter is a great way to experiment with Python’s features, but it is not recommended for solving more complex problems.\nNormally, when we want to write a program, we use a text editor to write the Python instructions into a file, which is called a script. By convention, Python scripts have names that end with .py.\nTo execute the script, you have to tell the Python interpreter the name of the file. Let’s say we have a file called python.py. In a command window (or terminal), you would run a file as follows:\n$ python python.py\nWe use a special type of Python called iPython. In iPython we can use special notebooks (like the one you are reading now), which let us mix formatted text and Python code and execute Python code directly in the notebook.\nIf you want to install Python locally on your computer, check out one of these links: Windows Mac"
-  },
-  {
-    "objectID": "completed.html#what-is-a-program",
-    "href": "completed.html#what-is-a-program",
-    "title": "1. Introduction to Python programming",
-    "section": "What is a program?",
-    "text": "What is a program?\nThe definition of a program at its most basic is a sequence of Python statements that have been crafted to do something.\nFor example, look at the following text. Look at the text and figure out the most common word and how many times it occurs.\nit may help to understand human affairs to be clear that most of the great triumphs and tragedies of history are caused, not by people being fundamentally good or fundamentally bad, but by people being fundamentally people ... he rather liked people\nThen imagine that you are doing this task looking at millions of lines of text. It would be quicker for you to learn Python and write a Python program to count the words than it would be to manually scan the words.\nNow take a look at the code below and run it. It does exactly what you were supposed to do (but faster and, probably, more accurately).\n\n\n\n\n\n\n\n\nYou don’t even need to know Python to use this program. You are the end user, you simply use the program. This is a good example of how Python and the Python language are acting as an intermediary between the end user and the programmer."
-  },
-  {
-    "objectID": "completed.html#the-building-blocks-of-a-program",
-    "href": "completed.html#the-building-blocks-of-a-program",
-    "title": "1. Introduction to Python programming",
-    "section": "The building blocks of a program",
-    "text": "The building blocks of a program\nThere are some low-level conceptual patterns that we use to construct programs. These constructs are not just for Python programs, they are part of every programming language from machine language up to the high-level languages.\n\ninput\nGet data from the “outside world”. This might be reading data from a file, or even some kind of sensor like a microphone or GPS. In our initial programs, our input will come from the user typing data on the keyboard.\noutput\nDisplay the results of the program on a screen or store them in a file or perhaps write them to a device like a speaker to play music or speak text.\nsequential execution\nPerform statements one after another in the order they are encountered in the script.\nconditional execution\nCheck for certain conditions and then execute or skip a sequence of statements.\nrepeated execution\nPerform some set of statements repeatedly, usually with some variation.\nreuse\nWrite a set of instructions once and give them a name and then reuse those instructions as needed throughout your program."
-  },
-  {
-    "objectID": "completed.html#values-and-value-types",
-    "href": "completed.html#values-and-value-types",
-    "title": "1. Introduction to Python programming",
-    "section": "Values and value types",
-    "text": "Values and value types\nA value is one of the basic things a program works with, like a letter or a number. These values belong to different types: 2 is an integer, and “Hello, World!” is a string, so called because it contains a “string” of letters.\nThese are all types in Python:\n\nint - numeric value (e.g 1)\nfloat - a decimal (e.g 2.5)\ncomplex - complex numbers coposed of real part and imaginary part (e.g. 6+4j where j represents the imaginary part)\nbool - Boolean value - True or False\nstr - text value (a string of letters) (e.g. 'Hello world!') - always enclosed in quotation marks!\nlist - a list of values - [1,2,3,4]\ntuple - a tuple - (1,2,3,4)\ndict - a dictionary - {1:\"one\", 2:\"two\", 3:\"three\"}\n\nTo find a type of a value, you use function type()\ntype([value])\nWhat is the data type of \"Hello world!\"?\n\n\n\n\n\n\n\n\nWhat is the data type of 17?\n\n\n\n\n\n\n\n\nWhat is the data type of 3.2?\n\n\n\n\n\n\n\n\nWhat is the type of 3.2 and \"3.2\"? Why are they different?\n\n\n\n\n\n\n\n\nWhat will happen if you try to print 1,000,000 in Python? What is the type of 1,000,000?"
-  },
-  {
-    "objectID": "completed.html#variables",
-    "href": "completed.html#variables",
-    "title": "1. Introduction to Python programming",
-    "section": "Variables",
-    "text": "Variables\nOne of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value. You assign a value to a variable using = sign:\n[variable] = [value]\nAssign 3.1415926535897931 to variable pi\n\n\n\n\n\n\n\n\nYou can assign value of any type to a variable.\nAssign 'Python ROCKS!!!' to a variable called message.\n\n\n\n\n\n\n\n\nNotice that assignement to a variable does not produce any output. You can print the value assigned to a variable by passing variable name to the print() function.\nAttention!! You pass the variable name without the quotation marks. That’s how we can tell variables from strings.\nPrint message\n\n\n\n\n\n\n\n\nPrint pi\n\n\n\n\n\n\n\n\nNow, you can check the type of the values by simply checking the type of a variable. Check the type of pi and message.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHave you noticed that the type of a variable is in fact the type of the assigned value?"
-  },
-  {
-    "objectID": "completed.html#statements",
-    "href": "completed.html#statements",
-    "title": "1. Introduction to Python programming",
-    "section": "Statements",
-    "text": "Statements\nYou have just learned the second type of statments.\nA statement is a unit of code that the Python interpreter can execute. We have seen two kinds of statements: print being an expression statement and assignment.\nWhen you type a statement in interactive mode, the interpreter executes it and displays the result, if there is one. A script usually contains a sequence of statements. If there is more than one statement, the results appear one at a time as the statements execute.\nRun the following code and compare it with its output:"
-  },
-  {
-    "objectID": "completed.html#string-operations",
-    "href": "completed.html#string-operations",
-    "title": "1. Introduction to Python programming",
-    "section": "String operations",
-    "text": "String operations\nThe + operator works with strings, but it is not addition in the mathematical sense. Instead it performs concatenation, which means joining the strings by linking them end to end.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe * operator also works with strings by multiplying the content of a string by an integer."
-  },
-  {
-    "objectID": "completed.html#user-input",
-    "href": "completed.html#user-input",
-    "title": "1. Introduction to Python programming",
-    "section": "User input",
-    "text": "User input\nPython provides a built-in function called input that gets input from the keyboard. When this function is called, the program stops and waits for the user to type something. When the user presses Return or Enter, the program resumes and input returns what the user typed as a string.\nTry it yourself:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo print the value entered by the user, you simply print the variable it was assigned to.\n\n\n\n\n\n\n\n\nYou can pass a string to input to be displayed to the user before pausing for input:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe sequence \\n at the end of the prompt represents a newline, which is a special character that causes a line break. That’s why the user’s input appears below the prompt.\nNow you can print your name:\n\n\n\n\n\n\n\n\nNow you can try it yourself.\n\nAsk your user to type the number of books s/he read last month.\nAssign the value to number variable\nTransform number variable to an integer using int() (use help() if you need it)\nCalculate the difference between the user and an average person (an average person reads 1 book a month)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAttention!!!\nIf you expect the user to type a numeric value and the user types something other than a string of digits, you get an error (try to type the answer as a string, e.g. six instead of 6). Why does it happen?\nLater, we will learn how to deal with such cases."
-  },
-  {
-    "objectID": "completed.html#comments",
-    "href": "completed.html#comments",
-    "title": "1. Introduction to Python programming",
-    "section": "Comments",
-    "text": "Comments\nAs programs get bigger and more complicated, they get more difficult to read. For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing. These notes are called comments, and in Python they start with the # symbol:\n\n\n\n\n\n\n\n\nEverything from the # to the end of the line is ignored; it has no effect on the program.\n\n\nImages and GIFs Disclaimer: Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
-  },
-  {
-    "objectID": "p2-variables-expressions-statements.html#python-homework-problems",
-    "href": "p2-variables-expressions-statements.html#python-homework-problems",
-    "title": "1. Practice: Variables and Statements",
-    "section": "Python Homework Problems",
-    "text": "Python Homework Problems\n\n1. Basic Arithmetic Operations\nWrite a Python script that takes two numbers from the user and prints their sum, difference, product, and quotient.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. Converting Fahrenheit to Celsius\nWrite a program that asks the user to enter a temperature in Fahrenheit, converts it to Celsius, and prints the result.\nFormula:\nC = (5/9) * (F - 32)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. Simple Interest Calculation\nWrite a Python program that asks the user for Principal (P), Rate of Interest (R), and Time in years (T), then calculates and prints the Simple Interest paid.\nFormula:\nSI = (P * R * T) / 100\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. Swapping Two Numbers\nWrite a Python program that swaps two numbers entered by the user. Given the order of entry, the numbers should be printed in reverse order.\nExample Output:\nThis is the first number: ...\nThis is the second number: ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5. Perimeter of a Rectangle\nWrite a Python program that asks the user to enter the length and width of a rectangle and calculates its perimeter.\nFormula:\nP = 2 * (L + W)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6. Convert Seconds to Minutes and Hours\nWrite a program that takes an input of the number of seconds and converts it into minutes and hours. Prints separate messages with the resulting minutes and hours. Choose a meaningful message for each output.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7. String Concatenation\nWrite a program that asks the user for first name and last name, then prints them together in one line.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8. Calculating Discounts\nWrite a Python program that asks for the original price of a product and the discount percentage, then calculates and prints the final price.\nFormula:\nFinal Price = Original Price - (Discount * Original Price / 100)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9. Calculating Average of Three Numbers\nWrite a program that takes three numbers as input and prints their average.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
-  },
-  {
-    "objectID": "index.html#definition",
-    "href": "index.html#definition",
-    "title": "3. Functions",
-    "section": "Definition",
-    "text": "Definition\nIn the context of programming, a function is a named sequence of statements that performs a computation. When you define a function, you specify the name and the sequence of statements.\nIn the example below:\n- the statement is function definition - def is a kyeword used to build a new function (see Building your own functions below)\n- thing is a function name\n- the block after : is the sequence of statements that function thing() performs\n\n\n\n\n\n\n\n\nLater, you can “call” the function by name."
-  },
-  {
-    "objectID": "index.html#built-in-functions",
-    "href": "index.html#built-in-functions",
-    "title": "3. Functions",
-    "section": "Built-in functions",
-    "text": "Built-in functions\nPython provides a number of important built-in functions that we can use without needing to provide the function definition. We have already seen some of these functions before:\n\n\n\n\n\n\n\n\n*The expression in parentheses is called the argument of the function.\n\nSome useful built-in functions you should (probably) remember\n\nmax and min returns the largest and the smallest values in a list\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlen returns the number of items in its argument\n\n\n\n\n\n\n\n\n\n\nint, float, and str are type conversion functions - they convert values from one type to another."
-  },
-  {
-    "objectID": "index.html#building-your-own-functions",
-    "href": "index.html#building-your-own-functions",
-    "title": "3. Functions",
-    "section": "Building your own functions",
-    "text": "Building your own functions\n\nWe create a new function using the def keyword followed by optional parameters in parentheses.\nWe indent the body of the function (as we did in the conditials or itrations).\n\n\n\n\n\n\n\n\n\nThis defines the function but does not execute the body of the function.\nTo call the function, you have to use its name.\n\n\n\n\n\n\n\n\nAfter you define the funtion, you can use your function later in as many places as you want."
-  },
-  {
-    "objectID": "index.html#paramters-and-arguments",
-    "href": "index.html#paramters-and-arguments",
-    "title": "3. Functions",
-    "section": "Paramters and arguments",
-    "text": "Paramters and arguments\nSome of the built-in functions we have seen require arguments.\nInside the function, the arguments are assigned to variables called parameters.\n\n\n\n\n\n\n\n\nThis function assigns the argument to a parameter named xyz. When the function is called, it prints the value of the parameter (whatever it is) twice.\n\n\n\n\n\n\n\n\nSome of the functions yield results. We can call them fruitful functions (for the lack of better name). Other functions, like print_twice, perform an action but don’t return a value. They are called void functions.\nWhen you call a fruitful function, you almost always want to do something with the result; for example, you might assign it to a variable or use it as part of an expression:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeep in mind that if you call a function in interactive notebook, Python displays the result. If you use it in a script (e.g. on your local machine, it will not display anyting).\n\n\n\n\n\n\n\n\nVoid functions might display something on the screen or have some other effect, but they don’t have a return value.\nIf you try to assign the result to a variable, you get a special value called None.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "p4-functions.html",
-    "href": "p4-functions.html",
-    "title": "3. Functions - Practice",
-    "section": "",
-    "text": ":::"
-  },
-  {
-    "objectID": "p4-functions.html#challenge",
-    "href": "p4-functions.html#challenge",
-    "title": "3. Functions - Practice",
-    "section": "Challenge",
-    "text": "Challenge\nThis is a challenge that uses the skills you develped to this point.\nWrite a function named computations that takes one parameter named number. If the number is even, the function print the text: The number is even, the result is followed by the number devided by 2. If the number is odd, the function print the text: The number is odd, the result is followed by the result of the expression 3 * number + 1.\nUsing this function, write a program that allows a user to type any integer and then keeps calling computations until the result is 1.\nWhen the result of 1 is obtained (and it will be obtained for any integer), print the message This computations function is bananas!! and terminate the program. Make sure to use try and except to make sure is used to catch input errors (and print a meaningful message for the user).\nMost of all, have fun with this coding challenge!"
-  },
-  {
-    "objectID": "completed.html#definition",
-    "href": "completed.html#definition",
-    "title": "3. Functions",
-    "section": "Definition",
-    "text": "Definition\nIn the context of programming, a function is a named sequence of statements that performs a computation. When you define a function, you specify the name and the sequence of statements.\nIn the example below:\n- the statement is function definition - def is a kyeword used to build a new function (see Building your own functions below)\n- thing is a function name\n- the block after : is the sequence of statements that function thing() performs\n\n\n\n\n\n\n\n\nLater, you can “call” the function by name."
-  },
-  {
-    "objectID": "completed.html#built-in-functions",
-    "href": "completed.html#built-in-functions",
-    "title": "3. Functions",
-    "section": "Built-in functions",
-    "text": "Built-in functions\nPython provides a number of important built-in functions that we can use without needing to provide the function definition. We have already seen some of these functions before:\n\n\n\n\n\n\n\n\n*The expression in parentheses is called the argument of the function.\n\nSome useful built-in functions you should (probably) remember\n\nmax and min returns the largest and the smallest values in a list\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlen returns the number of items in its argument\n\n\n\n\n\n\n\n\n\n\nint, float, and str are type conversion functions - they convert values from one type to another."
-  },
-  {
-    "objectID": "completed.html#building-your-own-functions",
-    "href": "completed.html#building-your-own-functions",
-    "title": "3. Functions",
-    "section": "Building your own functions",
-    "text": "Building your own functions\n\nWe create a new function using the def keyword followed by optional parameters in parentheses.\nWe indent the body of the function (as we did in the conditials or itrations).\n\n\n\n\n\n\n\n\n\nThis defines the function but does not execute the body of the function.\nTo call the function, you have to use its name.\n\n\n\n\n\n\n\n\nAfter you define the funtion, you can use your function later in as many places as you want."
-  },
-  {
-    "objectID": "completed.html#paramters-and-arguments",
-    "href": "completed.html#paramters-and-arguments",
-    "title": "3. Functions",
-    "section": "Paramters and arguments",
-    "text": "Paramters and arguments\nSome of the built-in functions we have seen require arguments.\nInside the function, the arguments are assigned to variables called parameters.\n\n\n\n\n\n\n\n\nThis function assigns the argument to a parameter named xyz. When the function is called, it prints the value of the parameter (whatever it is) twice.\n\n\n\n\n\n\n\n\nSome of the functions yield results. We can call them fruitful functions (for the lack of better name). Other functions, like print_twice, perform an action but don’t return a value. They are called void functions.\nWhen you call a fruitful function, you almost always want to do something with the result; for example, you might assign it to a variable or use it as part of an expression:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeep in mind that if you call a function in interactive notebook, Python displays the result. If you use it in a script (e.g. on your local machine, it will not display anyting).\n\n\n\n\n\n\n\n\nVoid functions might display something on the screen or have some other effect, but they don’t have a return value.\nIf you try to assign the result to a variable, you get a special value called None."
-  },
-  {
-    "objectID": "challenge1-functions.html",
-    "href": "challenge1-functions.html",
-    "title": "3. Functions - Challenge",
-    "section": "",
-    "text": "This is a challenge that uses the skills you develped to this point\nWrite a function named computations() that takes one parameter named number. If the number is even, the function print the text: The number is even, the result is followed by the number devided by 2. If the number is odd, the function print the text: The number is odd, the result is followed by the result of the expression 3 * the number + 1.\nUsing this function, write a program that allows a user to type any integer and then keeps calling computations() until the result is 1.\nWhen the result of 1 is obtained (and it will be obtained for any integer), print the message This computations function is bananas!! and terminate the program. Make sure to use try and except to make sure is used to catch input errors (and print a meaningful message for the user).\nMost of all, have fun with this coding challenge!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
-  },
-  {
-    "objectID": "p4-functions.html#excercises",
-    "href": "p4-functions.html#excercises",
-    "title": "3. Functions - Practice",
-    "section": "Excercises",
-    "text": "Excercises\n\nRewrite the grading program you created in the previous practice by using a function. Then use the function, called convert_grade to convert to letter grade every score in the list called scores. NB: Your function should not break when it encounters problematic scores. The original program description: write a program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error message. If the score is between 0.0 and 1.0, print a grade using the following table:\n\n\n\n\nScore\nGrade\n\n\n\n\n&gt;= 0.9\nA\n\n\n&gt;= 0.8\nB\n\n\n&gt;= 0.7\nC\n\n\n&gt;= 0.6\nD\n\n\n&lt; 0.6\nF\n\n\n\nComplete the code in the cell below:"
-  },
-  {
-    "objectID": "index.html#length-of-strings",
-    "href": "index.html#length-of-strings",
-    "title": "4. Strings",
-    "section": "Length of strings",
-    "text": "Length of strings\nTo get a length of a string, you can use function len()\n\n\n\n\n\n\n\n\nTo find the last element of a sequence, remember about starting from 0!!!"
-  },
-  {
-    "objectID": "index.html#string-slices",
-    "href": "index.html#string-slices",
-    "title": "4. Strings",
-    "section": "String slices",
-    "text": "String slices\nA segment of a string is called a slice. Selecting a slice is similar to selecting a character:\n\n\n\n\n\n\n\n\nIf you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf the first index is greater than or equal to the second the result is an empty string, represented by two quotation marks:"
-  },
-  {
-    "objectID": "index.html#string-comparison",
-    "href": "index.html#string-comparison",
-    "title": "4. Strings",
-    "section": "String comparison",
-    "text": "String comparison\nThe word in is a boolean operator that takes two strings and returns True if the first appears as a substring in the second:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can use comparison operators to compare two string:\n\n\n\n\n\n\n\n\nYou can use &gt; and &lt; to find alphabetical order."
-  },
-  {
-    "objectID": "index.html#parsing-text",
-    "href": "index.html#parsing-text",
-    "title": "4. Strings",
-    "section": "Parsing text",
-    "text": "Parsing text\nYou can use Python to find and extract a specific portion of text from a longer string. For example, find a domain address in an email:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPay attention to syntax: variable.function()"
-  },
-  {
-    "objectID": "index.html#format-operator",
-    "href": "index.html#format-operator",
-    "title": "4. Strings",
-    "section": "Format operator",
-    "text": "Format operator\nThe format operator, % allows us to construct strings, replacing parts of the strings with the data stored in variables.\n- %d - integer - %g - floating-point number - %s - string\n\n\n\n\n\n\n\n\nYou can use multiple values too.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImages and GIFs Disclaimer: Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
-  },
-  {
-    "objectID": "p5-strings.html",
-    "href": "p5-strings.html",
-    "title": "4. Strings Practice",
-    "section": "",
-    "text": "Find and slice. Use find and string slicing to extract the portion of the string after the colon character and then use the float function to convert the extracted string into a floating point number.\nIn the second cell below, generalize this algorithm. It should loop through the three strings provided in input and ensure that there is a “:” before extracting, converting and printing the number.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreate a program that, collects user input until the user types “done”.\nGiven any string in input will first check for the length of the string. If the string in less than 5 characters long, it prints the message “Can’t do anything with such a short string, try harder!”\nWhen the string is longer than 5 character, then the program will slice the string and only extract the middle five characters.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreate a program that, collects user input until the user types “done”.\nFor each string in input, first, strip any white space at the beginning or the end of the string. Then delete all the vowels from the string and print the resulting string.\n\n\n\n\n\n\n\n\n\n\nCount Vowels in a String Create a function count_vowels(text) that counts the number of vowels (a, e, i, o, u) in a given string. Use a for loop and conditional statements to accomplish the task.\n\n\n\n\n\n\n\n\n\n\nPassword Strength Checker Write a function check_password_strength(password) that evaluates a password. Then test it on three passwords of your choice. The rules are:\n\n\nIf it’s less than 6 characters → “Weak”\nIf it’s between 6-10 characters → “Moderate”\nIf it’s more than 10 characters → “Strong”"
-  },
-  {
-    "objectID": "challenge2-strings.html",
-    "href": "challenge2-strings.html",
-    "title": "4. Challenge",
-    "section": "",
-    "text": "This is a challenge that uses the skills you developed to this point, with particular attention to string manipulation\nThe task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and compute the sum total of what the guest spent.\nSince the data comes from a system, a Point of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'\nYou should then make sure your code generalizes to the following test cases:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'\ndata = 'chicken food$12.50'\ndata = ''\n\nWrite your code here"
-  },
-  {
-    "objectID": "completed.html#length-of-strings",
-    "href": "completed.html#length-of-strings",
-    "title": "4. Strings",
-    "section": "Length of strings",
-    "text": "Length of strings\nTo get a length of a string, you can use function len()\n\n\n\n\n\n\n\n\nTo find the last element of a sequence, remember about starting from 0!!!"
-  },
-  {
-    "objectID": "completed.html#string-slices",
-    "href": "completed.html#string-slices",
-    "title": "4. Strings",
-    "section": "String slices",
-    "text": "String slices\nA segment of a string is called a slice. Selecting a slice is similar to selecting a character:\n\n\n\n\n\n\n\n\nIf you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf the first index is greater than or equal to the second the result is an empty string, represented by two quotation marks:"
-  },
-  {
-    "objectID": "completed.html#string-comparison",
-    "href": "completed.html#string-comparison",
-    "title": "4. Strings",
-    "section": "String comparison",
-    "text": "String comparison\nThe word in is a boolean operator that takes two strings and returns True if the first appears as a substring in the second:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can use comparison operators to compare two string:\n\n\n\n\n\n\n\n\nYou can use &gt; and &lt; to find alphabetical order."
-  },
-  {
-    "objectID": "completed.html#parsing-text",
-    "href": "completed.html#parsing-text",
-    "title": "4. Strings",
-    "section": "Parsing text",
-    "text": "Parsing text\nYou can use Python to find and extract a specific portion of text from a longer string. For example, find a domain address in an email:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPay attention to syntax: variable.function()"
-  },
-  {
-    "objectID": "completed.html#format-operator",
-    "href": "completed.html#format-operator",
-    "title": "4. Strings",
-    "section": "Format operator",
-    "text": "Format operator\nThe format operator, % allows us to construct strings, replacing parts of the strings with the data stored in variables.\n- %d - integer - %g - floating-point number - %s - string\n\n\n\n\n\n\n\n\nYou can use multiple values too.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImages and GIFs Disclaimer: Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
+    "text": "Word Length Filter: Ask the user to input a sentence. Print all the words that are longer than 4 characters.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCounting Specific Word: Given a list of strings, count how many times the word “apple” appears (case-insensitive).\n\n\n\n\n\n\n\n\n\n\nBuild a List from User Input: Ask the user to enter 5 names and store them in a list. Then print the list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild the infinite List from User Input: Ask the user to continue to enter names as long as the user does not type “done”. Then print the list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrint Dictionary Keys: You have a dictionary of animals and their sounds. Print all the animals (keys).\n\n\n\n\n\n\n\n\n\n\nSimple Login Check: Check if a username exists in a dictionary. If it does, print “Welcome!”, otherwise print “User not found.”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo-Do List Manager Create a function add_task(todo_list, task) that adds a task to a to-do list (list of strings). Then create another functioremove_task(todo_list, task) to remove a task if it exists. To test the functions, create a list of 5 things and loop through it to create the list. Then create a list of 2 things and remove them. Make sure to handle any situation where an item to remove is not in the list of added items. To verify your code, print the list after adding the 5 items, then print it again after removing the items."
   },
   {
     "objectID": "index.html#lists",
@@ -371,53 +35,25 @@
     "text": "List, dictionary or tuple?\n\nUse a tuple when you know what information goes in it, it is a constant set of values (unlikely to change) and all you’re going to do with it is iterate through it.\n\nTuples are faster and safer than lists (because they cannot be modified).\nFor example, person’s credentials for your website, a set with names of the months.\n\nUse a dictionary when you have an unordered set of unique keys that map to values, like in an address book.\nUse lists when you want to store similar elements and when the order of elements in the sequence matters.\n\n\n\nImages and GIFs Disclaimer: Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
   },
   {
-    "objectID": "c6-data-structures.html",
-    "href": "c6-data-structures.html",
-    "title": "7. Data structures - lists, tuples, dictionaries",
+    "objectID": "challenge4-dictionary_solved.html",
+    "href": "challenge4-dictionary_solved.html",
+    "title": "5. Dictionary Challenge - Solution",
     "section": "",
-    "text": "Like a string, a list is a sequence of values. In a string, the values are characters; in a list, they can be any type.\nThe simplest way to create a list is to enclose the elements in square brackets:\n\n\n\n\n\n\n\n\n\n\n\n\nYou can create an empty list (and the fill it later):\n\n\n\n\n\n\nYou can also place a list inside a list (a nested list):\n\n\n\n\n\n\n\n\nUnlike strings, lists are mutable because you can change the order of items in a list or reassign an item in a list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe + operator concatenates lists:\n\n\n\n\n\n\nThe * operator repeats a list a given number of times:\n\n\n\n\n\n\n\n\n\n\n\n\nThe in operator also works on lists:\n\n\n\n\n\n\n\n\n\nSlicing lists works the same way as slicing strings.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nappend adds an elemen to a list\n\n\n\n\n\n\n\n\nextend takes a list as an argument and appends all of its elements\n\n\n\n\n\n\n\n\nsort arranges the elements from low to high\n\n\n\n\n\n\n\nThe list.sort() method uses ascending order by default, but you can reverse that using the reverse=True arguement. More importantly it uses Unicode sorting, but it has a second argument called key that allows you to specify a specific sorting criterion (see second example).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf you know the index of an element, you can use pop or del\n\npop modifies the list and returns the element that was removed\n\n\n\n\n\n\n\n\ndel removes the element, but does not return the removed element\n\n\n\n\n\n\n\nIf you know the element you want to remove (but not the index), you can use remove:\n\n\n\n\n\n\nTo remove more than one element, you can use del with a slice index:"
+    "text": "Guest Check This is a challenge that uses the skills you develped to this point, with particular attention to the use of dictionaries.\n\nThe task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and create a dictionary with food items and drink items as separate. Then you should compute the sum total of what the guest spent, keeping food and drink items separate. The output of your program will print two messages:\nTotal check value for food items is: $ [total value of all food items ordered]\nand\nTotal check value for drink items is: $ [total value of all drink items ordered]\nSince the data comes from a system, a Point of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'\nYou should then make sure your code generalizes to the following test cases:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30' data = 'chicken food$12.50' data = ''\nHint: your dictionary will be nested, with the following structure:\n{'food': {'chicken': 12.5, 'burger': 10.5}, 'drink': {'beer': 5.0, 'wine': 6.5}}\n\n\n\n\n\n\n\n\n\nMulti-User Task Manager Multi User Task Manager: You are creating a task manager where each user has their own list of tasks. Use a dictionary to store users and their tasks, where: The keys are usernames (strings). The values are lists of tasks (strings).\n\nImplement the following functions: 1. add_user(todo_dict, username): Adds a new user with an empty task list. If the user already exists, print a message.\n\nadd_task(todo_dict, username, task): Adds a task to the specified user’s task list. If the user doesn’t exist, print an error.\nremove_task(todo_dict, username, task): Removes a task from the user’s list if it exists. If the user or task doesn’t exist, print an appropriate message.\nTest the functions by:\n\n\nCreating 2 users.\nAdding 3 tasks to each.\nPrinting the full to-do structure.\nRemoving a task for one user.\nAttempting to remove a non-existent task for the other.\nPrinting the final structure.\n\nThis task requires a dictionary because you are mapping users to their respective task lists, which cannot be done efficiently using only a list."
   },
   {
-    "objectID": "c6-data-structures.html#lists",
-    "href": "c6-data-structures.html#lists",
-    "title": "7. Data structures - lists, tuples, dictionaries",
+    "objectID": "challenge3-lists_solved.html",
+    "href": "challenge3-lists_solved.html",
+    "title": "5. List Challenge - Solution",
     "section": "",
-    "text": "Like a string, a list is a sequence of values. In a string, the values are characters; in a list, they can be any type.\nThe simplest way to create a list is to enclose the elements in square brackets:\n\n\n\n\n\n\n\n\n\n\n\n\nYou can create an empty list (and the fill it later):\n\n\n\n\n\n\nYou can also place a list inside a list (a nested list):\n\n\n\n\n\n\n\n\nUnlike strings, lists are mutable because you can change the order of items in a list or reassign an item in a list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe + operator concatenates lists:\n\n\n\n\n\n\nThe * operator repeats a list a given number of times:\n\n\n\n\n\n\n\n\n\n\n\n\nThe in operator also works on lists:\n\n\n\n\n\n\n\n\n\nSlicing lists works the same way as slicing strings.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nappend adds an elemen to a list\n\n\n\n\n\n\n\n\nextend takes a list as an argument and appends all of its elements\n\n\n\n\n\n\n\n\nsort arranges the elements from low to high\n\n\n\n\n\n\n\nThe list.sort() method uses ascending order by default, but you can reverse that using the reverse=True arguement. More importantly it uses Unicode sorting, but it has a second argument called key that allows you to specify a specific sorting criterion (see second example).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf you know the index of an element, you can use pop or del\n\npop modifies the list and returns the element that was removed\n\n\n\n\n\n\n\n\ndel removes the element, but does not return the removed element\n\n\n\n\n\n\n\nIf you know the element you want to remove (but not the index), you can use remove:\n\n\n\n\n\n\nTo remove more than one element, you can use del with a slice index:"
+    "text": "This is a challenge that uses the skills you developed to this point, with particular attention to list manipulation\nThe task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and compute the sum total of what the guest spent. Keep food and drink items separate by printing two messages:\nTotal check value for food items is: $ [total value of all food items ordered]\nand\nTotal check value for drink items is: $ [total value of all drink items ordered]\nSince the data comes from a system, a Poing of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'\nYou should then make sure your code generalizes to the following test cases:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'\ndata = 'chicken food$12.50'\ndata = ''"
   },
   {
-    "objectID": "c6-data-structures.html#careful-lists-do-assignments-by-reference",
-    "href": "c6-data-structures.html#careful-lists-do-assignments-by-reference",
-    "title": "7. Data structures - lists, tuples, dictionaries",
-    "section": "Careful!! Lists do assignments by reference",
-    "text": "Careful!! Lists do assignments by reference\nIf you assign a string to another string, you are creating two separate variables. That means that you will have two separate memory references where the value of the two variables are stored.\n\n\n\n\n\n\nThis is not what happens with lists. When you assing a list to another list, you are assigning the reference to the first list, there is one memory location storing the value and both lists point to that same location.\n\n\n\n\n\n\n\n\n\n\n\n\nIf you want to explicitely create a copy of a list, thereby creating a new memory location to store separate values from the original list you cannot do a simple assignment. You must instead use the copy() method that every list has."
-  },
-  {
-    "objectID": "c6-data-structures.html#dictionaries",
-    "href": "c6-data-structures.html#dictionaries",
-    "title": "7. Data structures - lists, tuples, dictionaries",
-    "section": "Dictionaries",
-    "text": "Dictionaries\nA dictionary is like a list, but more general. You can think of a dictionary as a mapping between a set of indices (which are called keys) and a set of values. The association of a key and a value is called a key-value pair or sometimes an item.\nTo create an empty dictionary you can:\n\nuse a dict() function\n\n\n\n\n\n\n\n\nuse curly brackets {}\n\n\n\n\n\n\n\nTo add items to the dictionary, you can use square brackets:\n\n\n\n\n\n\nYou can also create a dictionary with values already in it.\n\n\n\n\n\n\nKeep in mind that the order of the key-value pairs might not be the same. The order of items in a dictionary is unpredictable because dictionaries are unordered sets.\nHowever it is not a problem because we use the keys to look up the corresponding values:\n\n\n\n\n\n\nKeep in mind that the key must be unique. Otherwise you will not be able to identify the values.\nIf the key isn’t in the dictionary, you get an exception:\n\n\n\n\n\n\nYou can check if a key is in the dictionary by using in operator\n\n\n\n\n\n\n\n\n\n\n\n\nTo see whether something appears as a value in a dictionary, you can use the method values, which returns the values\n\n\n\n\n\n\nYou can also convert it to a list\n\n\n\n\n\n\nAnalogically, you can use keys method, to find all the keys in the dictionary\n\n\n\n\n\n\n\nDictionaries as a set of counters\nImagine that you want to count the letters in a string (read: elements in a sequence).\nYou could create a dictionary to hold the output for you where keys are the letters and values are counts.\n\n\n\n\n\n\nYou can use get method to be more efficient.\nget takes a key and a default value. If the key exists in the dictionary, it reurns its value. If it does not, it returns the default value.\n\n\n\n\n\n\n\n\n\n\n\n\nIn the example above, 0 is the default value that is printed only when the key does not exist in the dictionary (think of it as a small if / else statement where 0 appears in the else block). You can replace it with other value types. For example, you could print NA instead of a 0.\nYou can use this method to count the elements of a sequence more efficiently."
-  },
-  {
-    "objectID": "c6-data-structures.html#tuples",
-    "href": "c6-data-structures.html#tuples",
-    "title": "7. Data structures - lists, tuples, dictionaries",
-    "section": "Tuples",
-    "text": "Tuples\nA tuple is a sequence of values much like a list. The values stored in a tuple can be any type, and they are indexed by integers.\nThe important difference is that tuples are immutable.\nA tuple is a comma-separated list of values:\n\n\n\n\n\n\nIt is common to enclose tuples in parentheses (so you can find them quickly), but it is not necessary.\n\n\n\n\n\n\n\n\n\n\n\n\nMost list operators work on tuples. However, if you try to modify an element of a tuple, you will get an error.\n\n\n\n\n\n\nThe way around this is to replace one tuple with another:\n\n\n\n\n\n\n\nTuple assignment\nOne of the unique features of the Python language is the ability to have a tuple on the left side of an assignment statement so you can assign more than one variable at a time.\nCompare the two cells below:\n\n\n\n\n\n\n\n\n\n\n\n\nA clever application of tuple assignment allows us to swap the values of two variables in a single statement:\n\n\n\n\n\n\nWhen doing this, however, you have to be careful about the number of values and variables.\n\n\n\n\n\n\n\n\nTuples and dictionaries\nBefore you saw how to find keys or values of a dictioanry. Dictionaries have also a method called items which returns a list of tuples, each tuple being showing a key value pair.\n\n\n\n\n\n\nYou can also change the order to value-key if you write a simple loop."
-  },
-  {
-    "objectID": "c6-data-structures.html#list-dictionary-or-tuple",
-    "href": "c6-data-structures.html#list-dictionary-or-tuple",
-    "title": "7. Data structures - lists, tuples, dictionaries",
-    "section": "List, dictionary or tuple?",
-    "text": "List, dictionary or tuple?\n\nUse a tuple when you know what information goes in it, it is a constant set of values (unlikely to change) and all you’re going to do with it is iterate through it.\n\nTuples are faster and safer than lists (because they cannot be modified).\nFor example, person’s credentials for your website, a set with names of the months.\n\nUse a dictionary when you have an unordered set of unique keys that map to values, like in an address book.\nUse lists when you want to store similar elements and when the order of elements in the sequence matters."
-  },
-  {
-    "objectID": "p6-data-structures-challenges.html",
-    "href": "p6-data-structures-challenges.html",
-    "title": "5. Data Sructures Practice",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Word Length Filter: Ask the user to input a sentence. Print all the words that are longer than 4 characters.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCounting Specific Word: Given a list of strings, count how many times the word “apple” appears (case-insensitive).\n\n\n\n\n\n\n\n\n\n\nBuild a List from User Input: Ask the user to enter 5 names and store them in a list. Then print the list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild the infinite List from User Input: Ask the user to continue to enter names as long as the user does not type “done”. Then print the list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrint Dictionary Keys: You have a dictionary of animals and their sounds. Print all the animals (keys).\n\n\n\n\n\n\n\n\n\n\nSimple Login Check: Check if a username exists in a dictionary. If it does, print “Welcome!”, otherwise print “User not found.”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo-Do List Manager Create a function add_task(todo_list, task) that adds a task to a to-do list (list of strings). Then create another functioremove_task(todo_list, task) to remove a task if it exists. To test the functions, create a list of 5 things and loop through it to create the list. Then create a list of 2 things and remove them. Make sure to handle any situation where an item to remove is not in the list of added items. To verify your code, print the list after adding the 5 items, then print it again after removing the items."
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "challenge3-lists.html",
@@ -432,5 +68,40 @@
     "title": "5. Dictionary Challenge",
     "section": "",
     "text": "This is a challenge that uses the skills you developed to this point, with particular attention to the use of dictionaries\nThe task is to write a program that will compute the total amount a guest should pay by parsing an arbitrary restaurant check. The check, extracted from a point of sale, comes to you as a string with items, categories and amounts. You should extract the appropriate data and create a dictionary with food items and drink items as separate. Then you should compute the sum total of what the guest spent, keeping food and drink items separate. The output of your program will print two messages:\nTotal check value for food items is: $ [total value of all food items ordered]\nand\nTotal check value for drink items is: $ [total value of all drink items ordered]\nSince the data comes from a system, a Poing of Sale, you can be sure that its structure is fixed. You should ensure that your code works for a typical check, using the following sample:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50'\nYou should then make sure your code generalizes to the following test cases:\ndata = 'chicken food$12.50;burger food$10.50;beer drink$5.00;wine drink$6.50;soda drink$2.50;poke food$14.30'\ndata = 'chicken food$12.50'\ndata = ''\nHint: your dictionary will be nested, with the following structure:\n{'food': {'chicken': 12.5, 'burger': 10.5}, 'drink': {'beer': 5.0, 'wine': 6.5}}\n\n\n\n\n\n\n\n\n\nMulti-User Task Manager Multi User Task Manager: You are creating a task manager where each user has their own list of tasks. Use a dictionary to store users and their tasks, where: The keys are usernames (strings). The values are lists of tasks (strings).\n\nImplement the following functions: 1. add_user(todo_dict, username): Adds a new user with an empty task list. If the user already exists, print a message.\n\nadd_task(todo_dict, username, task): Adds a task to the specified user’s task list. If the user doesn’t exist, print an error.\nremove_task(todo_dict, username, task): Removes a task from the user’s list if it exists. If the user or task doesn’t exist, print an appropriate message.\nTest the functions by:\n\n\nCreating 2 users.\nAdding 3 tasks to each.\nPrinting the full to-do structure.\nRemoving a task for one user.\nAttempting to remove a non-existent task for the other.\nPrinting the final structure.\n\nThis task requires a dictionary because you are mapping users to their respective task lists, which cannot be done efficiently using only a list."
+  },
+  {
+    "objectID": "completed.html#lists",
+    "href": "completed.html#lists",
+    "title": "5. Data Structures",
+    "section": "Lists",
+    "text": "Lists\nLike a string, a list is a sequence of values. In a string, the values are characters; in a list, they can be any type.\nThe simplest way to create a list is to enclose the elements in square brackets:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can create an empty list (and the fill it later):\n\n\n\n\n\n\n\n\nYou can also place a list inside a list (a nested list):\n\n\n\n\n\n\n\n\n\nLists are mutable\nUnlike strings, lists are mutable because you can change the order of items in a list or reassign an item in a list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nList operations\nThe + operator concatenates lists:\n\n\n\n\n\n\n\n\nThe * operator repeats a list a given number of times:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe in operator also works on lists:\n\n\n\n\n\n\n\n\n\n\nList slices\nSlicing lists works the same way as slicing strings.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nList methods\n\n\n\n\n\n\nNote\n\n\n\nappend adds an element to a list\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nextend takes a list as an argument and appends all of its elements\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nsort arranges the elements from low to high\n\n\n\n\n\n\n\n\n\n\nThe list.sort() method uses ascending order by default, but you can reverse that using the reverse=True argument. More importantly it uses Unicode sorting, but it has a second argument called key that allows you to specify a specific sorting criterion (see second example).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeleting elements from a list\nIf you know the index of an element, you can use pop or del\n\n\n\n\n\n\nNote\n\n\n\npop modifies the list and returns the element that was removed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\ndel removes the element, but does not return the removed element\n\n\n\n\n\n\n\n\n\n\nIf you know the element you want to remove (but not the index), you can use remove:\n\n\n\n\n\n\n\n\nTo remove more than one element, you can use del with a slice index:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nCareful!! Lists do assignments by reference\n\n\nIf you assign a string to another string, you are creating two separate variables. That means that you will have two separate memory references where the value of the two variables are stored.\n\n\n\n\n\n\n\n\nThis is not what happens with lists. When you assign a list to another list, you are assigning the reference to the first list, there is one memory location storing the value and both lists point to that same location.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf you want to explicitly create a copy of a list, thereby creating a new memory location to store separate values from the original list you cannot do a simple assignment. You must instead use the copy() method that every list has."
+  },
+  {
+    "objectID": "completed.html#dictionaries",
+    "href": "completed.html#dictionaries",
+    "title": "5. Data Structures",
+    "section": "Dictionaries",
+    "text": "Dictionaries\nA dictionary is like a list, but more general. You can think of a dictionary as a mapping between a set of indices (which are called keys) and a set of values. The association of a key and a value is called a key-value pair or sometimes an item.\nTo create an empty dictionary you can:\n\n\n\n\n\n\nNote\n\n\n\nuse a dict() function\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nuse curly brackets {}\n\n\n\n\n\n\n\n\n\n\nTo add items to the dictionary, you can use square brackets:\n\n\n\n\n\n\n\n\nYou can also create a dictionary with values already in it.\n\n\n\n\n\n\n\n\nKeep in mind that the order of the key-value pairs might not be the same. The order of items in a dictionary is unpredictable because dictionaries are unordered sets.\nHowever it is not a problem because we use the keys to look up the corresponding values:\n\n\n\n\n\n\n\n\nKeep in mind that the key must be unique. Otherwise you will not be able to identify the values.\nIf the key isn’t in the dictionary, you get an exception:\n\n\n\n\n\n\n\n\nYou can check if a key is in the dictionary by using in operator\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo see whether something appears as a value in a dictionary, you can use the method values, which returns the values\n\n\n\n\n\n\n\n\nYou can also convert it to a list\n\n\n\n\n\n\n\n\nAnalogically, you can use keys method, to find all the keys in the dictionary\n\n\n\n\n\n\n\n\n\nDictionaries as a set of counters\nImagine that you want to count the letters in a string (read: elements in a sequence).\nYou could create a dictionary to hold the output for you where keys are the letters and values are counts.\n\n\n\n\n\n\n\n\nYou can use get method to be more efficient.\nget takes a key and a default value. If the key exists in the dictionary, it reurns its value. If it does not, it returns the default value.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn the example above, 0 is the default value that is printed only when the key does not exist in the dictionary (think of it as a small if / else statement where 0 appears in the else block). You can replace it with other value types. For example, you could print NA instead of a 0.\nYou can use this method to count the elements of a sequence more efficiently."
+  },
+  {
+    "objectID": "completed.html#tuples",
+    "href": "completed.html#tuples",
+    "title": "5. Data Structures",
+    "section": "Tuples",
+    "text": "Tuples\nA tuple is a sequence of values much like a list. The values stored in a tuple can be any type, and they are indexed by integers.\n\n\n\n\n\n\nNote\n\n\n\nThe important difference is that tuples are immutable.\n\n\nA tuple is a comma-separated list of values:\n\n\n\n\n\n\n\n\nIt is common to enclose tuples in parentheses (so you can find them quickly), but it is not necessary.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMost list operators work on tuples. However, if you try to modify an element of a tuple, you will get an error.\n\n\n\n\n\n\n\n\nThe way around this is to replace one tuple with another:\n\n\n\n\n\n\n\n\n\nTuple assignment\nOne of the unique features of the Python language is the ability to have a tuple on the left side of an assignment statement so you can assign more than one variable at a time.\nCompare the two cells below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA clever application of tuple assignment allows us to swap the values of two variables in a single statement:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nWhen doing this, however, you have to be careful about the number of values and variables.\n\n\n\n\n\n\n\n\n\n\n\n\nTuples and dictionaries\nBefore you saw how to find keys or values of a dictioanry. Dictionaries have also a method called items which returns a list of tuples, each tuple being showing a key value pair.\n\n\n\n\n\n\n\n\nYou can also change the order to value-key if you write a simple loop."
+  },
+  {
+    "objectID": "completed.html#list-dictionary-or-tuple",
+    "href": "completed.html#list-dictionary-or-tuple",
+    "title": "5. Data Structures",
+    "section": "List, dictionary or tuple?",
+    "text": "List, dictionary or tuple?\n\nUse a tuple when you know what information goes in it, it is a constant set of values (unlikely to change) and all you’re going to do with it is iterate through it.\n\nTuples are faster and safer than lists (because they cannot be modified).\nFor example, person’s credentials for your website, a set with names of the months.\n\nUse a dictionary when you have an unordered set of unique keys that map to values, like in an address book.\nUse lists when you want to store similar elements and when the order of elements in the sequence matters.\n\n\n\nImages and GIFs Disclaimer: Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.\n\n\n\n\n\n\n  \n  \n    © 2025. All Rights Reserved.\n  \n  \n\n  \n  \n    Enabled by Dr. Biagio Palese"
+  },
+  {
+    "objectID": "p6-data-structures-challenges-solved.html",
+    "href": "p6-data-structures-challenges-solved.html",
+    "title": "5. Data Sructures Practice - Solution",
+    "section": "",
+    "text": "Word Length Filter: Ask the user to input a sentence. Print all the words that are longer than 4 characters.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCounting Specific Word: Given a list of strings, count how many times the word “apple” appears (case-insensitive).\n\n\n\n\n\n\n\n\n\n\nBuild a List from User Input: Ask the user to enter 5 names and store them in a list. Then print the list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild the infinite List from User Input: Ask the user to continue to enter names as long as the user does not type “done”. Then print the list.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrint Dictionary Keys: You have a dictionary of animals and their sounds. Print all the animals (keys).\n\n\n\n\n\n\n\n\n\n\nSimple Login Check: Check if a username exists in a dictionary. If it does, print “Welcome!”, otherwise print “User not found.”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo-Do List Manager Create a function add_task(todo_list, task) that adds a task to a to-do list (list of strings). Then create another functioremove_task(todo_list, task) to remove a task if it exists. To test the functions, create a list of 5 things and loop through it to create the list. Then create a list of 2 things and remove them. Make sure to handle any situation where an item to remove is not in the list of added items. To verify your code, print the list after adding the 5 items, then print it again after removing the items."
   }
 ]
