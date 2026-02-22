@@ -192,7 +192,7 @@ t[3:]
 
 ### List methods
 
-:::{.callout-note}
+::: callout-note
 **append** adds an element to a list
 :::
 
@@ -205,7 +205,7 @@ t.append('d')
 print(t)
 ```
 
-:::{.callout-note}
+::: callout-note
 **extend** takes a list as an argument and appends all of its elements
 :::
 
@@ -219,7 +219,7 @@ t1.extend(t2)
 print(t1)
 ```
 
-:::{.callout-note}
+::: callout-note
 **sort** arranges the elements from low to high
 :::
 
@@ -265,7 +265,7 @@ print(friends)
 
 If you know the index of an element, you can use *pop* or *del*
 
-:::{.callout-note}
+::: callout-note
 **pop** modifies the list and returns the element that was removed
 :::
 
@@ -279,7 +279,7 @@ print(t)
 print(x)
 ```
 
-:::{.callout-note}
+::: callout-note
 **del** removes the element, but does not return the removed element
 :::
 
@@ -314,7 +314,7 @@ del t[1:5]
 print(t)
 ```
 
-:::{.callout-warning}
+::: callout-warning
 Careful!! Lists do assignments by **reference**
 :::
 
@@ -378,7 +378,7 @@ A dictionary is like a list, but more general. You can think of a dictionary as 
 
 To create an empty dictionary you can:
 
-:::{.callout-note}
+::: callout-note
 use a **dict()** function
 :::
 
@@ -390,7 +390,7 @@ emptyD = dict()
 print(emptyD)
 ```
 
-:::{.callout-note}
+::: callout-note
 use curly brackets **{}**
 :::
 
@@ -551,7 +551,7 @@ print(d)
 
 A **tuple** is a sequence of values much like a list. The values stored in a tuple can be any type, and they are indexed by integers.
 
-:::{.callout-note}
+::: callout-note
 The important difference is that tuples are *immutable*.
 :::
 
@@ -638,7 +638,7 @@ a, b = b, a
 print(a)
 ```
 
-:::{.callout-warning}
+::: callout-warning
 When doing this, however, you have to be careful about the number of values and variables.
 :::
 
@@ -677,12 +677,11 @@ print(l)
 
 ## List, dictionary or tuple?
 
-* Use a tuple when you know what information goes in it, it is a constant set of values (unlikely to change) and all you’re going to do with it is iterate through it.
-  + Tuples are faster and safer than lists (because they cannot be modified).
-  + For example, person’s credentials for your website, a set with names of the months.
-* Use a dictionary when you have an unordered set of unique keys that map to values, like in an address book.
-* Use lists when you want to store similar elements and when the order of elements in the sequence matters.
-
+-   Use a tuple when you know what information goes in it, it is a constant set of values (unlikely to change) and all you’re going to do with it is iterate through it.
+    -   Tuples are faster and safer than lists (because they cannot be modified).
+    -   For example, person’s credentials for your website, a set with names of the months.
+-   Use a dictionary when you have an unordered set of unique keys that map to values, like in an address book.
+-   Use lists when you want to store similar elements and when the order of elements in the sequence matters.
 
 ::: disclaimer
 <p><strong>Images and GIFs Disclaimer:</strong> Some of the images and GIFs used on this website are not owned by me. They are used for educational and illustrative purposes only. All rights belong to their respective owners. If you believe any content violates copyright, please contact me for prompt removal.</p>

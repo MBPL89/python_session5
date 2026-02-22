@@ -1,6 +1,6 @@
 ---
 title: "5. Data Sructures Practice - Solution"
-#draft: true
+draft: true
 author: "Dr. Piccoli"
 format: live-html
 pyodide:
@@ -63,7 +63,7 @@ from io import StringIO
 
 ```
 
-1) **Word Length Filter**: Ask the user to input a sentence. Print all the words that are longer than 4 characters.
+1)  **Word Length Filter**: Ask the user to input a sentence. Print all the words that are longer than 4 characters.
 
 ```{pyodide}
 #| startover: false
@@ -83,7 +83,7 @@ for word in words:
         print(word)
 ```
 
-2) **Counting Specific Word**: Given a list of strings, count how many times the word "apple" appears (case-insensitive).
+2)  **Counting Specific Word**: Given a list of strings, count how many times the word "apple" appears (case-insensitive).
 
 ```{pyodide}
 #| startover: false
@@ -100,7 +100,7 @@ print("Apple appears", count, "times.")
 
 ```
 
-3) **Build a List from User Input**: Ask the user to enter 5 names and store them in a list. Then print the list.
+3)  **Build a List from User Input**: Ask the user to enter 5 names and store them in a list. Then print the list.
 
 ```{pyodide}
 #| startover: false
@@ -123,7 +123,7 @@ for i in range(5):
 print("Names entered:", names) 
 ```
 
-4) **Build the infinite List from User Input**: Ask the user to continue to enter names as long as the user does not type “done”. Then print the list.
+4)  **Build the infinite List from User Input**: Ask the user to continue to enter names as long as the user does not type “done”. Then print the list.
 
 ```{pyodide}
 #| startover: false
@@ -149,7 +149,7 @@ while True:
 print("Names entered:", names) 
 ```
 
-5) **Print Dictionary Keys**: You have a dictionary of animals and their sounds. Print all the animals (keys).
+5)  **Print Dictionary Keys**: You have a dictionary of animals and their sounds. Print all the animals (keys).
 
 ```{pyodide}
 #| startover: false
@@ -161,7 +161,7 @@ for animal in sounds.keys():
     print(animal)
 ```
 
-6) **Simple Login Check**: Check if a username exists in a dictionary. If it does, print "Welcome!", otherwise print "User not found."
+6)  **Simple Login Check**: Check if a username exists in a dictionary. If it does, print "Welcome!", otherwise print "User not found."
 
 ```{pyodide}
 #| startover: false
@@ -181,7 +181,6 @@ if users.get(username):
 else:
     print("User not found.")
 ```
-
 
 7)  **To-Do List Manager** Create a function `add_task(todo_list, task)` that adds a task to a to-do list (list of strings). Then create another `functioremove_task(todo_list, task)` to remove a task if it exists. To test the functions, create a list of 5 things and loop through it to create the list. Then create a list of 2 things and remove them. Make sure to handle any situation where an item to remove is not in the list of added items. To verify your code, print the list after adding the 5 items, then print it again after removing the items.
 
