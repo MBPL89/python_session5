@@ -1,6 +1,6 @@
 ---
 title: "5. Dictionary Challenge - Solution"
-draft: true
+#draft: true
 author: "Dr. Piccoli"
 format: live-html
 pyodide:
